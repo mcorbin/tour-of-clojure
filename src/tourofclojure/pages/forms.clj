@@ -11,7 +11,7 @@
     "fr" [:div
           [:h2 "Forms et l'appel de fonctions"]
           [:p "La syntaxe de Clojure peut sembler déroutante aux premiers abords."
-           "Pourtant, celle-ci est très simple et ne cache aucun piège."]
+           " Pourtant, celle-ci est très simple et ne cache aucun piège."]
           [:p "La règle est simple : "]
           [:pre [:code {:class "clojure"} "(operation param1 param2 ...)"]]
           [:p "Et c'est à peu près tout. On ouvre une parenthèse, on a un nom"
@@ -25,6 +25,10 @@
            " le nom de fonction."]
           [:p "De la même façon, " [:b "println"] " prend également un nombre"
            " indéfini de paramètres et retourne " [:b "nil"] "."]
+          [:p "Evidemment, si l'élement juste après la parenthèse d'une form"
+           " n'est pas une fonction, une erreur se produira, comme dans:"]
+          [:pre [:code {:class "java"} "(1 2 3)"]]
+          [:p "Cette form produira une erreur."]
           (navigation-block page-number)]
     [:h2 "Language not supported."]))
 

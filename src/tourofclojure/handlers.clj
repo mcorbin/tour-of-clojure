@@ -11,6 +11,7 @@
             [tourofclojure.pages.datastructures :as page-datastructures]
             [tourofclojure.pages.forms :as page-forms]
             [tourofclojure.pages.primitives-types :as page-types]
+            [tourofclojure.pages.fn-nb :as fn-nb]
             ))
 
 (defn get-lang
@@ -25,7 +26,8 @@
            (condp = id
              "1" (page-types/page 1 lang)
              "2" (page-forms/page 2 lang)
-             "3" (page-datastructures/page 3 lang)))))
+             "3" (fn-nb/page 3 lang)
+             "4" (page-datastructures/page 4 lang)))))
 
 (defroutes app-routes
   (GET "/" {cookies :cookies} (app-view/app (apply page/page

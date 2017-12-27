@@ -25,6 +25,28 @@
           [:p "Vous pouvez accéder aux pages du tutoriel via le "
            (link-to {} "/menu" "menu") "."]
 
+          [:p "Ce tutoriel présente les éléments essentiels de Clojure, mais"
+           " passe volontairement sous silence un certain nombre de choses."]
+
+          [:p "Voici d'autres tutoriels intéressants amenant un complément "
+           " d'informations et permettant d'aller plus loin avec le langage: "]
+
+          [:ul
+           [:li
+            [:p (link-to
+                 {}
+                 "https://www.braveclojure.com/clojure-for-the-brave-and-true/"
+                 "Clojure for the brave and true")
+             ", un livre sur Clojure accessible en ligne (aussi disponible au format"
+             " papier)."]]
+           [:li
+            [:p (link-to
+                 {}
+                 "https://aphyr.com/tags/Clojure-from-the-ground-up"
+                 "Clojure from the ground up")
+             ", un tutoriel d'Aphyr sur Clojure."]]
+           ]
+
           [:center
            [:p
             (link-to {} "/pages/1" "Commencer le tutoriel")]] "."]
