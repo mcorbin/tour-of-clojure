@@ -24,8 +24,8 @@
     (apply page/page
            (condp = id
              "1" (page-types/page 1 lang)
-             "2" (page-datastructures/page 2 lang)
-             "3" (page-forms/page 3 lang)))))
+             "2" (page-forms/page 2 lang)
+             "3" (page-datastructures/page 3 lang)))))
 
 (defroutes app-routes
   (GET "/" {cookies :cookies} (app-view/app (apply page/page

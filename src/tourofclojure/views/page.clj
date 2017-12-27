@@ -8,7 +8,6 @@
     [:div {:class "col-sm"}
      desc-content]
     [:div {:class "col-sm"}
-     [:div
-      [:pre
-       [:code {:class "language-klipse"}
-        code-content]]]]]])
+     [:pre
+      [:code {:class "language-klipse"}
+       code-content]]]]])

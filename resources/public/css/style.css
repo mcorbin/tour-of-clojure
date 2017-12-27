@@ -2,7 +2,6 @@
     background-image: linear-gradient(to right, #0f2242, #2452a1);
     padding-bottom: 5px;
     padding-top: 5px;
-    padding-left: 15px;
 }
 
 .float-left {
@@ -22,7 +21,10 @@
 #page {
     font-size: 17px;
     font-family: sans-serif;
-    margin: 10px;
+}
+
+#page .col-sm {
+    padding: 15px;
 }
 
 .clear {

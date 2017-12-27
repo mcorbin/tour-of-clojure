@@ -9,7 +9,7 @@
           [:h3 "Types, forms, structures de données et fonctions"]
           [:ul
            [:li (link-to {} "/pages/1" "Types primitifs")]
-           [:li (link-to {} "/pages/2" "Forms")]
+           [:li (link-to {} "/pages/2" "Forms et l'appel de fonctions")]
            [:li (link-to {} "/pages/3" "Structures de données")]
            [:li (link-to {} "/pages/4" "Fonctions sur les vector")]
            [:li (link-to {} "/pages/5" "Fonctions sur les map")]

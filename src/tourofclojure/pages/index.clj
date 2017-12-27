@@ -8,7 +8,7 @@
   [lang]
   (condp = lang
     "fr" [:div
-          [:h2 "Hello"]
+          [:h2 "Bonjour !"]
           [:p]
           [:p "Bienvenue pour une introduction sur le langage "
            (link-to {} "http://clojure.org" "Clojure") "."]
