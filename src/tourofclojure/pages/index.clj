@@ -45,7 +45,12 @@
                  "https://aphyr.com/tags/Clojure-from-the-ground-up"
                  "Clojure from the ground up")
              ", un tutoriel d'Aphyr sur Clojure."]]
-           ]
+           [:li
+            [:p (link-to
+                 {}
+                 "https://clojure.org/"
+                 "Le site de Clojure")
+             " contient également de nombreuses informations et rentre dans les détails."]]]
 
           [:center
            [:p
