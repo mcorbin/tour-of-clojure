@@ -1,0 +1,11 @@
+#header {
+    float: left;
+}
+
+#header h1 {
+    display: inline;
+}
+
+.clear {
+    clear:both;
+}
