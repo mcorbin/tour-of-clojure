@@ -15,10 +15,13 @@
     (include-js "/js/jquery-3.2.1.slim.min.js")
     (include-js "/js/popper.min.js")
     (include-js "/js/bootstrap.min.js")
+
     (include-css "/css/style.css")
+    (include-css "/css/highlight.css")
+    (include-js "/js/highlight.pack.js")
 
     (include-css "/css/codemirror.css")
-    (include-js "/js/klipse_selector.js")
+    (include-js "/js/script.js")
 
     [:body
      header
