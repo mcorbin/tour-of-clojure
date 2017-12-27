@@ -6,13 +6,15 @@
   (slurp "resources/public/pages/code/forms.clj"))
 
 (defn desc
-  [page-number]
-  [:div
-   [:h2 "Forms et l'appel de fonctions"]
-   [:p]
-   (navigation-block page-number)])
+  [page-number lang]
+  (condp = lang
+    "fr" [:div
+          [:h2 "Forms et l'appel de fonctions"]
+          [:p]
+          (navigation-block page-number)]
+    [:h2 "Language not supported."]))
 
 (defn page
-  [page-number]
-  [(desc page-number)
+  [page-number lang]
+  [(desc page-number lang)
    code])
