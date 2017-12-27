@@ -6,7 +6,9 @@
 
 (def index
   [[:div
-    [:p "Bienvenue pour un tour à propos du langage "
+    [:h2 "Hello"]
+    [:p]
+    [:p "Bienvenue pour une introduction sur le langage "
      (link-to {} "http://clojure.org" "Clojure") "."]
 
     [:p "Clojure est un langage fonctionnel de la famille des LISP"
@@ -15,6 +17,13 @@
      (link-to {} "https://clojurescript.org/" "ClojureScript") "."]
 
     [:p "Ce tutoriel est interactif (via "
-     (link-to {} "https://github.com/viebel/klipse" "klipse)")
-     ", n'hésitez pas à tester et modifier le code !"]]
+     (link-to {} "https://github.com/viebel/klipse" "klipse")
+     "), n'hésitez pas à tester et modifier le code !"]
+
+    [:p "Vous pouvez accéder aux pages du tutoriel via le "
+     (link-to {} "/menu" "menu") "."]
+
+    [:center
+     [:p
+      (link-to {} "/pages/1" "Commencer le tutoriel")]] "."]
    index-code])

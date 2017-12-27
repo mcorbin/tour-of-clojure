@@ -1,9 +1,28 @@
 #header {
+    background-image: linear-gradient(to right, #0f2242, #2452a1);
+    padding-bottom: 5px;
+    padding-top: 5px;
+    padding-left: 15px;
+}
+
+.float-left {
     float: left;
+}
+
+.float-right {
+    float: right;
 }
 
 #header h1 {
     display: inline;
+    color: white;
+    margin-left: 20px;
+}
+
+#page {
+    font-size: 17px;
+    font-family: sans-serif;
+    margin: 10px;
 }
 
 .clear {
