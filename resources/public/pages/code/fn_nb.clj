@@ -8,4 +8,8 @@
 
 (println (/ 10 3))
 
+(println (inc 1))
+
+(println (dec 1))
+
 (println (quot 10 3))

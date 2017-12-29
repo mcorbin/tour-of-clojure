@@ -24,7 +24,10 @@
           [:p "En clojure, on déplace juste la première parenthèse pour englober"
            " le nom de fonction."]
           [:p "De la même façon, " [:b "println"] " prend également un nombre"
-           " indéfini de paramètres et retourne " [:b "nil"] "."]
+           " indéfini de paramètres et retourne " [:b "nil"] "."
+           " D'ailleurs, j'ajouterais souvent un saut de ligne aux différents"
+           " appels de " [:b "println"] " dans le but de formater l'affichage."
+           ]
           [:p "Evidemment, si l'élement juste après la parenthèse d'une form"
            " n'est pas une fonction, une erreur se produira, comme dans:"]
           [:pre [:code {:class "java"} "(1 2 3)"]]

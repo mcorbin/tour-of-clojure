@@ -18,7 +18,7 @@
            " tourner Clojure (JVM, ClojureScript), car Clojure s'appuie sur les"
            " types de la plateforme hôte."]
           (navigation-block page-number)]
-    
+
     [:h2 "Language not supported."]))
 
 (defn page

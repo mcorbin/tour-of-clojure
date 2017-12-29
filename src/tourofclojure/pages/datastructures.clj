@@ -14,14 +14,16 @@
            " Nous pésentons ici les principales structures de données utilisées"
            " dans Clojure. Dans la section suivante, nous verrons les opérations"
            " possibles sur ces structures de données."]
-
+          [:p "Je présenterais dans la suite de ce tutoriel les fonctions de base"
+           " pour manipuler des structures de données. Mais il en existe de"
+           " nombreuses autres, la librairie standard de Clojure étant très riche."]
           [:h4 "Vector"]
           [:p "Les vector sont définis entre " [:b "[]"] " ou via la fonction " [:b "vector"]"."
            " Un vector peut être vu comme un array grandissant sur la droite"
            " (ce qu'on appelle communément une liste dans d'autres langages)."]
           [:p "Clojure étant dynamiquement typé, vous pouvez mixer les types"
-           " dans un vector (la chose est vraie pour les autres structures de"
-           " données d'ailleurs)."]
+           " dans un vector (la chose est d'ailleurs vraie pour les autres structures de"
+           " données)."]
 
           [:h4 "Map"]
           [:p "Les map, définies entre " [:b "{}"] " ou via la fonction "

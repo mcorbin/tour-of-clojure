@@ -12,6 +12,10 @@
             [tourofclojure.pages.forms :as page-forms]
             [tourofclojure.pages.primitives-types :as page-types]
             [tourofclojure.pages.fn-nb :as fn-nb]
+            [tourofclojure.pages.sequences :as page-sequences]
+            [tourofclojure.pages.fn-vector :as page-vector]
+            [tourofclojure.pages.fn-map-first :as page-map-first]
+            [tourofclojure.pages.fn-map-second :as page-map-second]
             ))
 
 (defn get-lang
@@ -27,7 +31,10 @@
              "1" (page-types/page 1 lang)
              "2" (page-forms/page 2 lang)
              "3" (fn-nb/page 3 lang)
-             "4" (page-datastructures/page 4 lang)))))
+             "4" (page-datastructures/page 4 lang)
+             "5" (page-vector/page 5 lang)
+             "6" (page-map-first/page 6 lang)
+             "7" (page-map-second/page 7 lang)))))
 
 (defroutes app-routes
   (GET "/" {cookies :cookies} (app-view/app (apply page/page
