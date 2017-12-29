@@ -10,7 +10,9 @@
 
 ;; set
 (println #{1 2 3 4})
-(println (hash-set 1 2 3 4 4) "\n")
+(println (hash-set 1 2 3 4 4))
+;; set from a vector
+(println (set [1 1 2 3 3 3]) "\n")
 
 ;; list
 (println '(1 2 3 4))

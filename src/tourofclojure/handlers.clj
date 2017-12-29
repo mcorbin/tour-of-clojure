@@ -16,6 +16,8 @@
             [tourofclojure.pages.fn-vector :as page-vector]
             [tourofclojure.pages.fn-map-first :as page-map-first]
             [tourofclojure.pages.fn-map-second :as page-map-second]
+            [tourofclojure.pages.fn-set :as page-set]
+            [tourofclojure.pages.fn-list :as page-list]
             ))
 
 (defn get-lang
@@ -34,7 +36,10 @@
              "4" (page-datastructures/page 4 lang)
              "5" (page-vector/page 5 lang)
              "6" (page-map-first/page 6 lang)
-             "7" (page-map-second/page 7 lang)))))
+             "7" (page-map-second/page 7 lang)
+             "8" (page-set/page 8 lang)
+             "9" (page-list/page 9 lang)
+             ))))
 
 (defroutes app-routes
   (GET "/" {cookies :cookies} (app-view/app (apply page/page

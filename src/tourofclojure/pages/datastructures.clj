@@ -36,6 +36,8 @@
           [:p "Les set se définissent entre " [:b "#{}"] " ou via la fonction "
            [:b "hash-set"]
            ", et sont des collections de valeurs uniques."]
+          [:p "Il existe aussi des " [:b "des set triés"] ", pouvant être créé"
+           " via la la fonction " [:b "sorted-set"] "."]
 
           [:h4 "List"]
           [:p "Les listes se définissent entre " [:b "'()"] " ou via la fonction "

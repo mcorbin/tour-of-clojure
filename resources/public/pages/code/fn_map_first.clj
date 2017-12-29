@@ -16,5 +16,8 @@
 (println (:bar {:foo "foo"} "default value!") "\n")
 
 ;; update value
-(println (update {:foo 1} :foo inc))
+(println (update {:foo 1} :foo inc) "\n")
+
+;; test if the map contains the key
+(println (contains? {:foo 1} :foo))
 
