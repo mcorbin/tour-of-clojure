@@ -9,7 +9,7 @@
   [page-number lang]
   (condp = lang
     "fr" [:div
-          [:h2 "Opérations sur les Map : partie 1"]
+          [:h2 "Opérations sur les Map: partie 1"]
           [:p "Voici quelques opérations sur les Map."]
           [:p "On voit ici tout l'intérêt des " [:b "keywords"] " présentés précédemment."]
           [:p "Une Map peut avoir des clés de tout type, et il est possible"

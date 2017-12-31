@@ -9,7 +9,7 @@
   [page-number lang]
   (condp = lang
     "fr" [:div
-          [:h2 "Opérations sur les Map : partie 2"]
+          [:h2 "Opérations sur les Map: partie 2"]
           [:p "Il existe un grand nombre de fonctions simplifiant la manipulation"
            " complexe de Map en Clojure."]
           [:p "En voici quelques unes permettant notamment"

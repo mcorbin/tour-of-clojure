@@ -9,7 +9,7 @@
   [page-number lang]
   (condp = lang
     "fr" [:div
-          [:h2 "Opérations sur les list"]
+          [:h2 "Opérations sur les List"]
           [:p "Voici quelques opérations sur les list."]
           [:p "Vous allez maintenant sûrement vous demander: à quoi servent les"
            " list alors que l'on a déjà les vector ?"]

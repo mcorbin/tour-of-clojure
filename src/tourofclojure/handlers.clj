@@ -39,6 +39,7 @@
              "7" (page-map-second/page 7 lang)
              "8" (page-set/page 8 lang)
              "9" (page-list/page 9 lang)
+             "10" (page-sequences/page 10 lang)
              ))))
 
 (defroutes app-routes
