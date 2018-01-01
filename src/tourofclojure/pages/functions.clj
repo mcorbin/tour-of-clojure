@@ -1,0 +1,2 @@
+(ns tourofclojure.pages.functions)
+
