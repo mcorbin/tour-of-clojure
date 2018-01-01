@@ -2,8 +2,7 @@
 
 (defn page
   [desc-content code-content]
-  [:div {:class "container-fluid"
-         :id "page"}
+  [:div {:class "container-fluid"}
    [:div {:class "row"}
     [:div {:class "col-sm"}
      desc-content]

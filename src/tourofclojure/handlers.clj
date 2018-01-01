@@ -18,6 +18,7 @@
             [tourofclojure.pages.fn-map-second :as page-map-second]
             [tourofclojure.pages.fn-set :as page-set]
             [tourofclojure.pages.fn-list :as page-list]
+            [tourofclojure.pages.lazy :as page-lazy]
             ))
 
 (defn get-lang
@@ -40,6 +41,7 @@
              "8" (page-set/page 8 lang)
              "9" (page-list/page 9 lang)
              "10" (page-sequences/page 10 lang)
+             "11" (page-lazy/page 11 lang)
              ))))
 
 (defroutes app-routes

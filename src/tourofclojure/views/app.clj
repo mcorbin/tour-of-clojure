@@ -26,6 +26,6 @@
     [:body
      header
      [:div {:class "clear"}]
-     [:div  content]
+     [:div {:id "page"} content]
      (include-js "/js/klipse_plugin.js")
      footer]]))

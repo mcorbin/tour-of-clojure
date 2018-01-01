@@ -24,7 +24,7 @@
            " des vector (vous pouvez voir les listes comme des listes chainées là"
            " où les vector peuvent accéder à une valeur directement)."]
           [:p "En général, vous utiliserez rarement les list, sauf quand vous"
-           " voulez qu'une structure de données où les valeurs sont ajoutées ou"
+           " voulez une structure de données où les valeurs sont ajoutées ou"
            " supprimées au début. Les list sont également utilisées pour écrire des "
            [:b "macro"] ", un sujet que nous découvrirons plus tard."]
           (navigation-block page-number)]

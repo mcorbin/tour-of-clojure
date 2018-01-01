@@ -21,7 +21,7 @@
              [:li (link-to {} "/pages/8" "Opérations sur les Set")]
              [:li (link-to {} "/pages/9" "Opérations sur les List")]
              [:li (link-to {} "/pages/10" "L'abstraction séquence")]
-             [:li (link-to {} "/pages/11" "Lazy évaluation")]]
+             [:li (link-to {} "/pages/11" "Evaluation lazy")]]
             [:h3 "Définir des fonctions et variables"]
             [:ul
              [:li (link-to {} "/pages/6" "Définir une variable")]

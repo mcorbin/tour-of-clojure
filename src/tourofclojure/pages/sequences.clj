@@ -13,16 +13,20 @@
           [:p]
           [:p "Un grand nombre de fonctions peuvent prendre en paramètre"
            " tout type de collections (vector, des list, map, set)."
-           "Cela fonctionne grâce"
+           " Cela fonctionne grâce"
            " à une abstraction nommée séquence."]
           [:p "Toutes les séquences sont des collections."]
           [:p "Cette abstraction définit une façon d'accéder et d'itérer"
            " de façon ordonnée et optimisée sur une structure de donnée."]
-          [:p "les collections Clojure peuvent être converties en séquence via la fonction "]
-          [:b "seq"] "."
+          [:p "les collections Clojure peuvent être converties en séquence via la fonction " [:b "seq"] "."]
+          [:p "D'ailleurs, si on regarde la description de la fonction " [:b "first"]
+           " dans la documentation, on remarque que la fonction utilise " [:b "seq"] ":"]
+          [:pre
+           [:code
+            "Returns the first item in the collection. Calls seq on its argument. If coll is nil, returns nil."]]
+          [:p "La chose est vraie aussi pour la fonction " [:b "rest" "."]]
           (navigation-block page-number)]
-    [:h2 "language not supported."]
-    ))
+    [:h2 "language not supported."]))
 
 (defn page
   [page-number lang]

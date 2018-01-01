@@ -21,6 +21,7 @@
 #page {
     font-size: 17px;
     font-family: sans-serif;
+    min-height: 800px;
 }
 
 #page .col-sm {
