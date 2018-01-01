@@ -20,6 +20,7 @@
             [tourofclojure.pages.fn-list :as page-list]
             [tourofclojure.pages.lazy :as page-lazy]
             [tourofclojure.pages.variable :as page-variable]
+            [tourofclojure.pages.functions :as page-functions]
             ))
 
 (defn get-lang
@@ -44,7 +45,9 @@
              "10" (page-sequences/page 10 lang)
              "11" (page-lazy/page 11 lang)
              "12" (page-variable/page 12 lang)
-             ))))
+             "13" (page-functions/page 13 lang)))
+
+    ))
 
 (defroutes app-routes
   (GET "/" {cookies :cookies} (app-view/app (apply page/page
