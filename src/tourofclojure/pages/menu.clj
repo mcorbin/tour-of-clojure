@@ -27,8 +27,8 @@
              [:li (link-to {} "/pages/12" "Définir une variable")]
              [:li (link-to {} "/pages/13" "Définir une fonction")]
              [:li (link-to {} "/pages/14" "Fonctions first class")]
-             [:li (link-to {} "/pages/15" "Variables locales")]
-             [:li (link-to {} "/pages/16" "destructuring")]]
+             [:li (link-to {} "/pages/15" "Let et variables locales")]
+             [:li (link-to {} "/pages/16" "Destructuring")]]
             [:h3 "Flow control"]
             [:ul
              [:li (link-to {} "/pages/3" "Vrai et faux")]
@@ -44,5 +44,12 @@
              [:li (link-to {} "/pages/3" "Threading macro")]
              [:li (link-to {} "/pages/3" "Composition de fonctions")]
              [:li (link-to {} "/pages/3" "Récursion/loop")]
-             ]]]]
+             ]
+            [:h3 "Clojure"]
+            [:ul
+             [:li (link-to {} "/pages/3" "Namespaces")]
+             [:li (link-to {} "/pages/3" "Macro")]
+             [:li (link-to {} "/pages/3" "Repl driven development")]
+             [:li (link-to {} "/pages/3" "IDE")]]
+            ]]]
     [:h2 "Language not supported"]))
