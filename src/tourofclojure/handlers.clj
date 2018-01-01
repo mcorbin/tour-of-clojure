@@ -21,6 +21,7 @@
             [tourofclojure.pages.lazy :as page-lazy]
             [tourofclojure.pages.variable :as page-variable]
             [tourofclojure.pages.functions :as page-functions]
+            [tourofclojure.pages.fn-firstclass :as page-firstclass]
             ))
 
 (defn get-lang
@@ -45,7 +46,10 @@
              "10" (page-sequences/page 10 lang)
              "11" (page-lazy/page 11 lang)
              "12" (page-variable/page 12 lang)
-             "13" (page-functions/page 13 lang)))
+             "13" (page-functions/page 13 lang)
+             "14" (page-firstclass/page 14 lang)
+
+             ))
 
     ))
 
