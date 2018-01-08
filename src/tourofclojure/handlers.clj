@@ -1,4 +1,5 @@
 (ns tourofclojure.handlers
+  ;; wtf is this giant require
   (:require [compojure.core :refer :all]
             [compojure.route :as route]
             [ring.middleware.cookies :refer [wrap-cookies]]
