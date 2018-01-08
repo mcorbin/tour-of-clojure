@@ -1,5 +1,5 @@
 ;; destructure a list/vector/sequence
-(let [[s1 s2] ["first string" "second string"]]
+(let [[s1 s2] ["first-string" "second-string"]]
   (println s1 s2 "\n"))
 
 ;; destructure the 2 first values and the rest
