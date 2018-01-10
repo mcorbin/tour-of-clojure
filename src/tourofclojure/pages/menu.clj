@@ -28,14 +28,16 @@
              [:li (link-to {} "/pages/13" "Définir une fonction")]
              [:li (link-to {} "/pages/14" "Fonctions first class")]
              [:li (link-to {} "/pages/15" "Let et variables locales")]
-             [:li (link-to {} "/pages/16" "Destructuring")]]
+             [:li (link-to {} "/pages/16" "Destructuring: Vector")]
+             [:li (link-to {} "/pages/17" "Destructuring: Map et defn")]]
             [:h3 "Flow control"]
             [:ul
-             [:li (link-to {} "/pages/3" "Vrai et faux")]
+             [:li (link-to {} "/pages/8" "Le vrai du faux")]
              [:li (link-to {} "/pages/3" "If, when, do")]
              [:li (link-to {} "/pages/3" "cond, condp")]
              [:li (link-to {} "/pages/3" "loop, while")]
              [:li (link-to {} "/pages/3" "doseq")]
+             [:li (link-to {} "/pages/3" "for")]
              ]
             [:h3 "Programmation fonctionnelle"]
             [:ul

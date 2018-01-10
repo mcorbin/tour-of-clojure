@@ -26,6 +26,7 @@
             [tourofclojure.pages.let :as page-let]
             [tourofclojure.pages.destructuring-vector :as page-destructuring-vec]
             [tourofclojure.pages.destructuring-map :as page-destructuring-map]
+            [tourofclojure.pages.if :as page-if]
             ))
 
 (defn get-lang
@@ -55,6 +56,7 @@
              "15" (page-let/page 15 lang)
              "16" (page-destructuring-vec/page 16 lang)
              "17" (page-destructuring-map/page 17 lang)
+             "18" (page-if/page 18 lang)
 
              ))
 
