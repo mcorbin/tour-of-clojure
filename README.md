@@ -1,3 +1,3 @@
-tourofclojure
+# A tour of Clojure
 
-fixme
+Interactive Clojure tutorial. Available soon !
