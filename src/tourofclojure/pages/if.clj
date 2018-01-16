@@ -24,6 +24,9 @@
            " vrai."]
           [:p "Dans la condition d'un if, une fonction, une structure de données, "
            " un keyword, un entier... Tout sera vrai, à part le booléen false et nil."]
+          [:p "Dernier détail sur " [:b "if"] ": la branche exécutée si la"
+           " condition est fausse est optionnelle. En cas de condition fausse et"
+           " sans de branches associée, " [:b "if"] " retournera " [:b "nil"] "."]
           [:h3 "or et and"]
           [:p [:b "or"] " sert à vérifier si au moins un de ses paramètre est "
            " évalué comme vrai. Si oui, ce paramètre sera retourné. Si non, " [:b "or"]

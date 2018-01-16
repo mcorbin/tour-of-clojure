@@ -27,6 +27,9 @@
             [tourofclojure.pages.destructuring-vector :as page-destructuring-vec]
             [tourofclojure.pages.destructuring-map :as page-destructuring-map]
             [tourofclojure.pages.if :as page-if]
+            [tourofclojure.pages.when-do :as page-when-do]
+            [tourofclojure.pages.cond :as page-cond]
+            [tourofclojure.pages.condp :as page-condp]
             ))
 
 (defn get-lang
@@ -57,10 +60,10 @@
              "16" (page-destructuring-vec/page 16 lang)
              "17" (page-destructuring-map/page 17 lang)
              "18" (page-if/page 18 lang)
-
-             ))
-
-    ))
+             "19" (page-when-do/page 19 lang)
+             "20" (page-cond/page 20 lang)
+             "21" (page-condp/page 21 lang)
+             ))))
 
 (defroutes app-routes
   (GET "/" {cookies :cookies} (app-view/app (apply page/page

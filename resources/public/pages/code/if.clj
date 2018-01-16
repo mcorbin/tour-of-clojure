@@ -22,10 +22,9 @@
            "+ is true \n"
            "+ is false \n"))
 
-;; Everything !
+;; Everything ! Note the false branch is optional.
 (println (if [1 2 3]
-           "[1 2 3] is true \n"
-           "[1 2 3] is false \n"))
+           "[1 2 3] is true \n"))
 
 ;; Or returns its first true param, or the last param
 (println ((or nil false +) 1000 1000) "\n")

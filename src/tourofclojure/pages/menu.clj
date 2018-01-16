@@ -32,8 +32,8 @@
              [:li (link-to {} "/pages/17" "Destructuring: Map et defn")]]
             [:h3 "Flow control"]
             [:ul
-             [:li (link-to {} "/pages/8" "Le vrai du faux")]
-             [:li (link-to {} "/pages/3" "If, when, do")]
+             [:li (link-to {} "/pages/18" "If, vrai et faux, or et and")]
+             [:li (link-to {} "/pages/19" "do et when")]
              [:li (link-to {} "/pages/3" "cond, condp")]
              [:li (link-to {} "/pages/3" "loop, while")]
              [:li (link-to {} "/pages/3" "doseq")]
