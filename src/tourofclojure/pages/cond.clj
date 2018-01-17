@@ -10,6 +10,13 @@
   (condp = lang
     "fr" [:div
           [:h2 "Cond"]
+          [:p [:b "cond"] " associe une condition à une valeur. Chaque condition"
+           " sera évaluée séquentiellement, et si la condition est vraie, cond"
+           " retournera la valeur associée."]
+          [:p "Rappelez vous, en Clojure, à part " [:b "nil"] " et " [:b " false"]
+           ", tout vaut vrai. Vous pouvez donc facilement définir une clause par"
+           " défaut, toujours évaluée à vrai, via un keyword par exemple."]
+          [:p "Si aucune clause n'est vraie, cond retourne "  [:b "nil"]]
           (navigation-block page-number)]
 
     [:h2 "Language not supported."]))
