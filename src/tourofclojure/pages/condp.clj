@@ -24,7 +24,7 @@
           [:p [:b "Attention"] ", contrairement à " [:b "cond"] " vu précédemment, "
            [:b "condp"] " retournera une exception si aucune clause ne match et "
            "qu'aucune valeur par défaut n'est fournie."]
-          ]
+          (navigation-block page-number)]
 
     [:h2 "Language not supported."]))
 
