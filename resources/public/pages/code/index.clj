@@ -1,10 +1,10 @@
 (defn fizzbuzz-number
   [nb]
-  (cond
-    (zero? (mod nb 15)) "FizzBuzz"
-    (zero? (mod nb 3)) "Fizz"
-    (zero? (mod nb 5)) "Buzz"
-    :default nb))
+  (condp = 0
+    (mod nb 15) "FizzBuzz"
+    (mod nb 3) "Fizz"
+    (mod nb 5) "Buzz"
+    nb))
 
 (defn fizzbuzz
   [start end]
