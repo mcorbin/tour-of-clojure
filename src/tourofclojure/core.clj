@@ -1,4 +1,4 @@
-(ns tourofclojure.core
+<(ns tourofclojure.core
   "Application entrypoint."
   (:require [clojure.tools.logging :as log]
             [clojure.tools.namespace.repl :as tn]

@@ -3,7 +3,7 @@
   :dependencies [[org.clojure/clojure "1.9.0"]
                  [org.clojure/tools.logging "0.4.0"]
                  [cheshire "5.8.0"]
-                 [circleci/clj-yaml "0.5.5"]
+                 [circleci/clj-yaml "0.5.6"]
                  [compojure "1.6.0"]
                  [environ "1.1.0"]
                  [hiccup "1.0.5"]
