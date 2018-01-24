@@ -9,7 +9,7 @@
   [page-number lang]
   (condp = lang
     "fr" [:div
-          [:h2 "Cond"]
+          [:h2 "cond"]
           [:p [:b "cond"] " associe une condition à une valeur. Chaque condition"
            " sera évaluée séquentiellement, et si la condition est vraie, cond"
            " retournera la valeur associée."]

@@ -34,9 +34,10 @@
             [:ul
              [:li (link-to {} "/pages/18" "If, vrai et faux, or et and")]
              [:li (link-to {} "/pages/19" "do et when")]
-             [:li (link-to {} "/pages/20" "cond")]
-             [:li (link-to {} "/pages/21" "condp")]
-             [:li (link-to {} "/pages/22" "case")]
+             [:li (link-to {} "/pages/20" "Gestion des erreurs")]
+             [:li (link-to {} "/pages/21" "cond")]
+             [:li (link-to {} "/pages/22" "condp")]
+             [:li (link-to {} "/pages/23" "case")]
              [:li (link-to {} "/pages/3" "loop, while")]
              [:li (link-to {} "/pages/3" "doseq")]
              [:li (link-to {} "/pages/3" "for")]

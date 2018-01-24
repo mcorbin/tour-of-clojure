@@ -31,6 +31,7 @@
             [tourofclojure.pages.cond :as page-cond]
             [tourofclojure.pages.condp :as page-condp]
             [tourofclojure.pages.case :as page-case]
+            [tourofclojure.pages.error :as page-error]
             ))
 
 (defn get-lang
@@ -62,9 +63,10 @@
              "17" (page-destructuring-map/page 17 lang)
              "18" (page-if/page 18 lang)
              "19" (page-when-do/page 19 lang)
-             "20" (page-cond/page 20 lang)
-             "21" (page-condp/page 21 lang)
-             "22" (page-case/page 22 lang)
+             "20" (page-error/page 20 lang)
+             "21" (page-cond/page 21 lang)
+             "22" (page-condp/page 22 lang)
+             "23" (page-case/page 23 lang)
              ))))
 
 (defroutes app-routes

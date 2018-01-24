@@ -9,7 +9,7 @@
   [page-number lang]
   (condp = lang
     "fr" [:div
-          [:h2 "Condp"]
+          [:h2 "condp"]
           [:p "Une autre construction intéressante est " [:b "condp"] "."]
           [:p "Le premier paramètre de " [:b "condp"] " est une fonction que l'on appellera " [:b "f"] "."
            " Le second paramètre un valeur que l'on appellera " [:b "v"] ". "
