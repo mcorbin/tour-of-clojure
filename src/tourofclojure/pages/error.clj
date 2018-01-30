@@ -12,10 +12,28 @@
           [:p "De la même façon que sa plateforme hôte, la gestion des erreurs"
            " en Clojure se base sur des exceptions."]
           [:p "Une exception peut être capturée via un block " [:b "try-catch"]
-           " terminé eventuellement d'un block " [:b "finally"] "."]
-          [:p "Une opération illégale où le mot clé " [:b "throw"] " lèvera"
-           " une exception."
-           ]
+           " terminé eventuellement d'un block " [:b "finally"] "."
+           "Une opération illégale où le mot clé " [:b "throw"] " lèvera"
+          " une exception."]
+          [:p "En Clojure sur la JVM, les exceptions sont des exceptions Java:"
+           [:pre [:code {:class "clojure"}
+                  "(try
+  (/ 1 0)
+  (catch ArithmeticException e
+    (str e)))"]]]
+          [:p "Il est bien sûr possible d'enchaîner plusieurs catch, avec"
+           " différents types d'exceptions:"
+           [:pre [:code "(try
+  (/ 1 0)
+  (catch IndexOutOfBoundsException e
+    (str e))
+  (catch Exception e
+    (str e)))"]]]
+          [:p "En ClojureScript (donc dans l'interpréteur à droite de la page),"
+           " il est possible de throw tout type de valeurs (comme en JavaScript)."
+           " La syntaxe " [:b "catch :default"] " permet de catch l'exception"
+           " quelle que soit son type. Attention, cette syntaxe n'existe pas en"
+           " Clojure sur la JVM."]
           (navigation-block page-number)]
 
     [:h2 "Language not supported."]))

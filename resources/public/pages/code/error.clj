@@ -6,11 +6,6 @@
     (println "Finally block" "\n")))
 
 (try
-  (throw "My exception is a string")
-  (catch js/Object err
-    (println "Caught a string: " err "\n")))
-
-(try
-  (throw "My exception is a string")
+  (throw "My exception is a string !")
   (catch :default err
-    (println "Caught everything: " err)))
+    (println "Caught a string: " err "\n")))
