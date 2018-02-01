@@ -5,4 +5,7 @@
   [:div {:class "footer,container-fluid"}
    [:center
     [:p [:b "powered by "
-         (link-to {} "https://mcorbin.fr" "mcorbin")]]]])
+         (link-to {} "https://mcorbin.fr" "mcorbin")]
+     [:b " - Available on "
+         (link-to {} "https://github.com/mcorbin/tour-of-clojure" "Github")]
+     ]]])
