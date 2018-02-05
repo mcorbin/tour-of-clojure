@@ -2,8 +2,6 @@
   (:require [hiccup.element :refer [link-to]]
             [tourofclojure.pages.util :refer [navigation-block]]))
 
-
-
 (def code
   (slurp "resources/public/pages/code/when_do.clj"))
 
@@ -20,15 +18,18 @@
            [:b "do"] " prend une série d'expressions, et va les exécuter une à une"
            " de façon séquentielle, et retournera le résultat de la dernière."]
           [:h3 "when"]
-          [:p "On a vu précédemment qu'un " [:b "if"] " peut ne pas prendre"
-           " d'expressions si la condition est fausse. Pour montrer clairement"
+          [:p "On a vu précédemment qu'un " [:b "if"] " peut ne prendre qu'une"
+           " expression après la condition, et donc ne pas avoir de branche à"
+           " exécuter si la condition est fausse. "
+           "Pour montrer clairement"
            " qu'une expression n'est exécutée que si une condition est vraie"
            " et retourner " [:b "nil"] " si la condition est fausse, il est"
            " préférable d'utiliser " [:b "when"] ", qui est similaire à " [:b "if"]
            " mais qui ne prend que 2 expressions (la condition est l'expression à"
            " exécuter si la condition est vraie), et qui retournera " [:b "nil"]
-           " si la condition est fausse."
-           ]
+           " si la condition est fausse."]
+          [:p "De plus, vous pouvez enchainer comme dans un " [:b "do"]
+           " les expressions à l'intérieur d'un " [:b "when"] "."]
           (navigation-block page-number)]
     [:h2 "Language not supported."]))
 

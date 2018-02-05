@@ -28,6 +28,7 @@
             [tourofclojure.pages.destructuring-map :as page-destructuring-map]
             [tourofclojure.pages.if :as page-if]
             [tourofclojure.pages.when-do :as page-when-do]
+            [tourofclojure.pages.if-let :as page-if-let]
             [tourofclojure.pages.cond :as page-cond]
             [tourofclojure.pages.condp :as page-condp]
             [tourofclojure.pages.case :as page-case]
@@ -64,11 +65,12 @@
              "17" (page-destructuring-map/page 17 lang)
              "18" (page-if/page 18 lang)
              "19" (page-when-do/page 19 lang)
-             "20" (page-error/page 20 lang)
-             "21" (page-cond/page 21 lang)
-             "22" (page-condp/page 22 lang)
-             "23" (page-case/page 23 lang)
-             "24" (page-loop/page 24 lang)
+             "20" (page-if-let/page 20 lang)
+             "21" (page-error/page 21 lang)
+             "22" (page-cond/page 22 lang)
+             "23" (page-condp/page 23 lang)
+             "24" (page-case/page 24 lang)
+             "25" (page-loop/page 25 lang)
              ))))
 
 (defroutes app-routes

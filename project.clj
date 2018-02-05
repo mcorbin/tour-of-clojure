@@ -1,5 +1,6 @@
 (defproject tourofclojure "0.0.1-SNAPSHOT"
-  :description "FIXME"
+  :description "An interactive Clojure tutorial"
+  :url "https://github.com/mcorbin/tour-of-clojure&"
   :dependencies [[org.clojure/clojure "1.9.0"]
                  [org.clojure/tools.logging "0.4.0"]
                  [cheshire "5.8.0"]
@@ -9,6 +10,7 @@
                  [hiccup "1.0.5"]
                  [mount "0.1.11"]
                  [ring/ring-defaults "0.3.1"]
+                 [org.clojure/tools.namespace "0.2.11"]
                  [ring/ring-jetty-adapter "1.6.2"]
                  [spootnik/unilog "0.7.22"]]
   :ring {:handler tourofclojure.handlers/app}
@@ -18,7 +20,6 @@
   :main tourofclojure.core
   :source-paths ["src"]
   :profiles {:dev {:dependencies [[javax.servlet/servlet-api "2.5"]
-                                  [org.clojure/tools.namespace "0.2.11"]
                                   [pjstadig/humane-test-output "0.8.2"]
                                   [ring/ring-mock "0.3.2"]]
                    :plugins [[lein-ring "0.12.2"]

@@ -18,6 +18,7 @@
 ;; condition is true
 (println
  (when (= 1 1)
+   (println "you can have multiple expressions in when !")
    "1 == 1 !")
  "\n")
 

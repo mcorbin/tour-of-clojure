@@ -1,11 +1,12 @@
-<(ns tourofclojure.core
+(ns tourofclojure.core
   "Application entrypoint."
   (:require [clojure.tools.logging :as log]
             [clojure.tools.namespace.repl :as tn]
             [mount.core :as m]
             [ring.adapter.jetty :refer [run-jetty]]
             [tourofclojure.config :as config]
-            [tourofclojure.handlers :as h]))
+            [tourofclojure.handlers :as h])
+  (:gen-class))
 
 (m/defstate server
   "Mount component for the web server. Use the configuration component.
