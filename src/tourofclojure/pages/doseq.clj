@@ -28,6 +28,21 @@
         v2 [10 9 8 7 6]]
   (println v1 \":\" v2))"]]
           [:p "Ici, on affichera toutes les combinaisons de v1 et v2 possibles."]
+          [:p "Il est possible d'utiliser de faire un peu de magie avec "
+           [:b "doseq"] ", via les keywords " [:b ":let"], [:b ":when"] " et "
+           [:b ":while"] ". Je ne présenterais ici que les deux premiers, "
+           [:b ":while"] " étant assez complexe. Personnellement, je pense qu'il"
+           " faut faire attention avec ces keywords qui peuvent parfois nuire"
+           " à la lisibilité du code selon moi."]
+          [:pre [:code "(doseq [v1 [0 1 2]
+        v2 [10 9 8]
+        :let [result (* v1 v2)]
+        :when (> result 17)]
+  (println result))"]]
+          [:p "Ici, on déclare avec " [:b ":let"] " une variable "
+           [:b "result"] " comme étant la "
+           "multiplication de " [:b "v1"] " et " [:b "v2"] ", et on utilise "
+           [:b ":when"] " pour filtrer tous les résultats inférieurs à 17."]
           [:p "Détail intéressant, le " (link-to {} "/pages/16" "destructuring")
            " fonctionne avec " [:b "doseq"] "."]
           (navigation-block page-number)]
