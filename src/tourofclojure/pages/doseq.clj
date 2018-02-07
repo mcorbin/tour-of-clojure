@@ -1,0 +1,40 @@
+(ns tourofclojure.pages.doseq
+  (:require [hiccup.element :refer [link-to]]
+            [tourofclojure.pages.util :refer [navigation-block]]))
+
+(def code
+  (slurp "resources/public/pages/code/doseq.clj"))
+
+(defn desc
+  [page-number lang]
+  (condp = lang
+    "fr" [:div
+          [:h2 "doseq"]
+          [:p [:b "doseq"] " permet d'itérer sur une séquence et d'exécuter"
+           " pour chaque élément une action. Une fois l'itération terminée,"
+           " doseq retourne " [:b "nil"] "."]
+          [:pre [:code "(doseq [value [0 1 2 3 4]]
+  (println value))"]]
+          [:p "On remarque que doseq commence par une déclaration semblable à "
+           [:b "let"] ". Ici, on indique que l'on va itérer sur un vector de"
+           " 5 éléments, et que l'on utilisera " [:b "println"] " sur chaque"
+           " valeur du vector (accessible via la variable " [:b "value"] "."]
+          [:p [:b "doesq"] " retournant toujours " [:b "nil"] ", il est"
+           " généralement utilisé pour provoquer des effets de bords"
+           " (comme dans notre exemple avec l'utilisation de " [:b "prinln"] ")."]
+          [:p [:b "doseq"] " peut également être utilisé pour itérer sur"
+           " plusieurs séquences, comme dans cet exemple:"]
+          [:pre [:code "(doseq [v1 [0 1 2 3 4]
+        v2 [10 9 8 7 6]]
+  (println v1 \":\" v2))"]]
+          [:p "Ici, on affichera toutes les combinaisons de v1 et v2 possibles."]
+          [:p "Détail intéressant, le " (link-to {} "/pages/16" "destructuring")
+           " fonctionne avec " [:b "doseq"] "."]
+          (navigation-block page-number)]
+
+    [:h2 "Language not supported."]))
+
+(defn page
+  [page-number lang]
+  [(desc page-number lang)
+   code])

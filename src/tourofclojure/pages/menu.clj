@@ -39,7 +39,7 @@
              [:li (link-to {} "/pages/22" "cond")]
              [:li (link-to {} "/pages/23" "condp")]
              [:li (link-to {} "/pages/24" "case")]
-             [:li (link-to {} "/pages/5" "loop")]
+             [:li (link-to {} "/pages/25" "loop")]
              [:li (link-to {} "/pages/3" "doseq")]
              [:li (link-to {} "/pages/3" "for")]
              [:li (link-to {} "/pages/3" "while")]
@@ -50,7 +50,6 @@
              [:li (link-to {} "/pages/3" "map, reduce, filter")]
              [:li (link-to {} "/pages/3" "Threading macro")]
              [:li (link-to {} "/pages/3" "Composition de fonctions")]
-             [:li (link-to {} "/pages/3" "Récursion/loop")]
              ]
             [:h3 "Clojure"]
             [:ul
