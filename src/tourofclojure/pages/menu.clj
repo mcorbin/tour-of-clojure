@@ -40,9 +40,9 @@
              [:li (link-to {} "/pages/23" "condp")]
              [:li (link-to {} "/pages/24" "case")]
              [:li (link-to {} "/pages/25" "loop")]
-             [:li (link-to {} "/pages/3" "doseq")]
-             [:li (link-to {} "/pages/3" "for")]
-             [:li (link-to {} "/pages/3" "while")]
+             [:li (link-to {} "/pages/26" "doseq")]
+             [:li (link-to {} "/pages/27" "for")]
+             [:li (link-to {} "/pages/28" "while")]
              ]
             [:h3 "Programmation fonctionnelle"]
             [:ul

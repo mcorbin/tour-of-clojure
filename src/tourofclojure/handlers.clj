@@ -35,6 +35,8 @@
             [tourofclojure.pages.error :as page-error]
             [tourofclojure.pages.loop :as page-loop]
             [tourofclojure.pages.doseq :as page-doseq]
+            [tourofclojure.pages.for :as page-for]
+            [tourofclojure.pages.while :as page-while]
             ))
 
 (defn get-lang
@@ -73,6 +75,8 @@
              "24" (page-case/page 24 lang)
              "25" (page-loop/page 25 lang)
              "26" (page-doseq/page 26 lang)
+             "27" (page-for/page 27 lang)
+             "28" (page-while/page 28 lang)
              ))))
 
 (defroutes app-routes
