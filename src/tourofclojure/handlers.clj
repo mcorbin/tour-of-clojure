@@ -37,6 +37,9 @@
             [tourofclojure.pages.doseq :as page-doseq]
             [tourofclojure.pages.for :as page-for]
             [tourofclojure.pages.while :as page-while]
+            [tourofclojure.pages.partial :as page-partial]
+            [tourofclojure.pages.comp :as page-comp]
+            [tourofclojure.pages.apply :as page-apply]
             ))
 
 (defn get-lang
@@ -77,6 +80,9 @@
              "26" (page-doseq/page 26 lang)
              "27" (page-for/page 27 lang)
              "28" (page-while/page 28 lang)
+             "29" (page-partial/page 29 lang)
+             "30" (page-comp/page 30 lang)
+             "31" (page-apply/page 31 lang)
              ))))
 
 (defroutes app-routes

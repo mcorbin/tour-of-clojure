@@ -46,7 +46,9 @@
              ]
             [:h3 "Programmation fonctionnelle"]
             [:ul
-             [:li (link-to {} "/pages/3" "apply")]
+             [:li (link-to {} "/pages/29" "partial")]
+             [:li (link-to {} "/pages/30" "comp")]
+             [:li (link-to {} "/pages/31" "apply")]
              [:li (link-to {} "/pages/3" "map, reduce, filter")]
              [:li (link-to {} "/pages/3" "Threading macro")]
              [:li (link-to {} "/pages/3" "Composition de fonctions")]
