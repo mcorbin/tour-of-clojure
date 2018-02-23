@@ -38,12 +38,21 @@
                  " valent respectivement " [:b "5"] " et " [:b "[]"] "."]]
            [:li [:b "counter"] " n'est pas égal à " [:b "0"] ", " [:b "recur"] " est"
             " donc appelé avec les résultats de " [:b "(dec counter)"] " et "
-            [:b "(conj result counter)"] ", c'est à dire " [:b "(recur 4 [5])"]
-            
-            ]
-
-           ]
-
+            [:b "(conj result counter)"] ", c'est à dire " [:b "(recur 4 [5])"] "."]
+           [:li [:b "recur"] " ayant été appelé, nous revenons au début de "
+            [:b "loop"] " sauf que maintenant " [:b "counter"] " vaudra " [:b "4"]
+            " et " [:b "result"] " vaudra " [:b "[5]"] "."]
+           [:li [:b "counter"] " n'est toujours pas égal à " [:b "0"] ", "
+            [:b "recur"] " est donc rappelé avec les nouveaux résultats "
+            "de " [:b "(dec counter)"] " et " [:b "(conj result counter)"] ", c'est"
+            " à dire " [:b "(recur 3 [5 4])"] "."]
+           [:li "L'itération se répète jusqu'à ce que " [:b "counter"] " soit"
+            " à " [:b "0"] ". A ce moment là, " [:b "recur"] " n'est pas appelé"
+            ", on appelle " [:b "println"] " et l'on sort de la loop."]]
+          [:p [:b "loop"] " est une construction intéressante, mais en Clojure"
+           " son utilisation est très limitée. Il est plus intéressant d'utiliser"
+           " des fonctions comme " [:b "map"] ", " [:b "reduce"] " ou " [:b "filter"]
+           " que nous verrons dans la suite de ce tutoriel."]
           (navigation-block page-number)]
     [:h2 "Language not supported."]))
 
