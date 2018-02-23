@@ -21,7 +21,7 @@
           [:p "Nous appliquons ici " [:b "partial"] " sur la fonction " [:b "+"]
            " suivi du paramètre " [:b "1"] "."]
           [:p [:b "add-one"] " contiendra une fonction qui une fois appelée"
-           " rajoutera ces paramètres à l'expression " [:b "(+ 1)"] "."]
+           " rajoutera ces paramètres à la form " [:b "(+ 1)"] "."]
           [:p "Par exemple, "[:b "(add-one 2 3)"] " est équivalent à "
            [:b "(+ 1 2 3)"]]
           [:p [:b "partial"] " est donc utilisée pour créer une nouvelle fonction"

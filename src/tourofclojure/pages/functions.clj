@@ -29,7 +29,7 @@
            " avec " [:b "fn"] "."]
           [:p "On remarque également dans cette fonction que c'est bien la"
            " dernière form qui est retournée par la fonction."]
-          [:p "Il est aussi possible de définir des fonctions avec l'expression "
+          [:p "Il est aussi possible de définir des fonctions avec la syntaxe "
            [:b "#(...)"] ". Le " [:b "%"] " sera le paramètre de la fonction, et"
            " si la fonction possède plusieurs paramètres, on utilise "
            [:b "%1, %2, %3..." " pour les représenter."]]

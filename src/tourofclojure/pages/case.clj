@@ -17,7 +17,7 @@
           [:p "Contrairement à " [:b "cond"] " et " [:b "condp"] " vu précédemment, "
            [:b "case"] " n'évalue pas chaque clause l'une après l'autre."
            " De plus, les valeurs dans les clauses ne sont pas évaluées et donc"
-           " ne peuvent pas être des expressions (cela doit être donc des valeurs"
+           " ne peuvent pas être des forms (cela doit être donc des valeurs"
            " litéralles comme des entiers, des string...)."]
           [:p "Comme " [:b "condp"] ", " [:b "case"] " produira une exception"
            " si aucune clause ne match."]

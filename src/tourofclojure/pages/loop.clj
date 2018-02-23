@@ -16,7 +16,7 @@
            " récursion. Tout d'abord, " [:b "loop"] " ressemble à " [:b "let"]
            " car la même syntaxe est utilisée pour définir une ou des valeurs"
            " initiales."]
-          [:p "Ensuite, loop prendra une expression. Cette expression contiendra"
+          [:p "Ensuite, loop prendra une form. Cette form contiendra"
            " généralement une condition d'arrêt, et le mot clé " [:b "recur"] "."]
           [:p [:b "recur"] " fera revenir l'exécution au début de " [:b "loop"] ","
            " sauf que les valeurs par des variables déclarés vaudront maintenant"

@@ -35,7 +35,7 @@
 "]]
           [:p [:b "if-let"] " commence comme " [:b "let"] " avec une déclaration"
            " de variable, mais un if est également réalisé: si la variable est"
-           " évaluée comme fausse, on exécute la première expression, sinon la"
+           " évaluée comme fausse, on exécute la première form, sinon la"
            " seconde."]
           [:p [:b "when-let"] " est exactement la même chose que " [:b "if-let"]
            " pour " [:b "when"] "."]
