@@ -40,6 +40,7 @@
             [tourofclojure.pages.partial :as page-partial]
             [tourofclojure.pages.comp :as page-comp]
             [tourofclojure.pages.apply :as page-apply]
+            [tourofclojure.pages.map :as page-map]
             ))
 
 (defn get-lang
@@ -83,6 +84,7 @@
              "29" (page-partial/page 29 lang)
              "30" (page-comp/page 30 lang)
              "31" (page-apply/page 31 lang)
+             "32" (page-map/page 32 lang)
              ))))
 
 (defroutes app-routes
