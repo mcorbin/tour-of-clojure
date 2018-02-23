@@ -6,6 +6,7 @@
 
 (println (count-and-add-one [10 10 10]))
 
-(def f1 (comp (partial + 1) (partial * 2) (partial / 10)))
+(def combine-math (comp (partial + 1) (partial * 2) (partial / 10)))
 
-(println (f1 100))
+;; will do (+ 1 (* 2 (/ 10 100))) => 1.2
+(println (combine-math 100))
