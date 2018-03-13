@@ -16,7 +16,10 @@
            " à filtrer."]
           [:p [:b "(f elem)"] " sera appelé pour chaque élément de la séquence."
            " Seul les éléments dont le résultat de cet appel est " [:b "true"]
-           " (pour Clojure, donc ni nil ni false) seront conservés."]
+           " (pour Clojure, donc ni nil ni false) seront conservés. Par exemple:"]
+          [:pre [:code "(filter even? [1 2 3])"]]
+          [:p "filtrera tous les éléments impairs (" [:b "even?"] " sera appelé"
+           " pour chaque élément du vector passé en paramètre)."]
           [:p [:b "filter"] " retourne une séquence lazy."]
           (navigation-block page-number)]
     [:h2 "Language not supported."]))
