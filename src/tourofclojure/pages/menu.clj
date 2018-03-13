@@ -52,14 +52,23 @@
              [:li (link-to {} "/pages/32" "map")]
              [:li (link-to {} "/pages/33" "filter")]
              [:li (link-to {} "/pages/34" "reduce")]
-             [:li (link-to {} "/pages/3" "Threading macro")]
-             [:li (link-to {} "/pages/3" "Composition de fonctions")]
+             [:li (link-to {} "/pages/35" "remove")]
+             [:li (link-to {} "/pages/36" "Threading macro")]
              ]
-            [:h3 "Clojure"]
+            [:h3 "Programmation concurrente et parallèle"]
+            [:ul
+             [:li (link-to {} "/pages/29" "atom")]
+             [:li (link-to {} "/pages/30" "refs")]
+             [:li (link-to {} "/pages/31" "agents")]
+             [:li (link-to {} "/pages/31" "core async")]
+             [:li (link-to {} "/pages/31" "Pour aller plus loin")]]
+            [:h3 "Namespaces et macros"]
             [:ul
              [:li (link-to {} "/pages/3" "Namespaces")]
-             [:li (link-to {} "/pages/3" "Macro")]
-             [:li (link-to {} "/pages/3" "Repl driven development")]
+             [:li (link-to {} "/pages/3" "Macros")]]
+            [:h3 "Développer en Clojure"]
+            [:ul
+             [:li (link-to {} "/pages/3" "Repl Driven Development")]
              [:li (link-to {} "/pages/3" "IDE")]]
             ]]]
     [:h2 "Language not supported"]))
