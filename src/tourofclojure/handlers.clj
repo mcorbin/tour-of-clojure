@@ -87,8 +87,8 @@
              "30" (page-comp/page 30 lang)
              "31" (page-apply/page 31 lang)
              "32" (page-map/page 32 lang)
-             "33" (page-reduce/page 33 lang)
-             "34" (page-filter/page 34 lang)
+             "33" (page-filter/page 33 lang)
+             "34" (page-reduce/page 34 lang)
              ))))
 
 (defroutes app-routes
