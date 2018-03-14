@@ -41,8 +41,9 @@
             [tourofclojure.pages.comp :as page-comp]
             [tourofclojure.pages.apply :as page-apply]
             [tourofclojure.pages.map :as page-map]
-            [tourofclojure.pages.reduce :as page-reduce]
             [tourofclojure.pages.filter :as page-filter]
+            [tourofclojure.pages.remove :as page-remove]
+            [tourofclojure.pages.reduce :as page-reduce]
             ))
 
 (defn get-lang
@@ -88,7 +89,8 @@
              "31" (page-apply/page 31 lang)
              "32" (page-map/page 32 lang)
              "33" (page-filter/page 33 lang)
-             "34" (page-reduce/page 34 lang)
+             "34" (page-remove/page 34 lang)
+             "35" (page-reduce/page 35 lang)
              ))))
 
 (defroutes app-routes
