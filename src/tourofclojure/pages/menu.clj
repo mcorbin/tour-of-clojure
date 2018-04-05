@@ -53,7 +53,7 @@
              [:li (link-to {} "/pages/33" "filter")]
              [:li (link-to {} "/pages/34" "remove")]
              [:li (link-to {} "/pages/35" "reduce")]
-             [:li (link-to {} "/pages/36" "Threading macro")]
+             [:li (link-to {} "/pages/36" "Threading macros")]
              ]
             [:h3 "Programmation concurrente et parallèle"]
             [:ul

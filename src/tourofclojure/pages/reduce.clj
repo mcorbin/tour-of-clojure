@@ -74,7 +74,6 @@
            " avec " [:b "reduce"] ", cela est un bon exercice."]
           (navigation-block page-number)]
 
-    
     [:h2 "Language not supported."]))
 
 (defn page

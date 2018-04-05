@@ -44,6 +44,7 @@
             [tourofclojure.pages.filter :as page-filter]
             [tourofclojure.pages.remove :as page-remove]
             [tourofclojure.pages.reduce :as page-reduce]
+            [tourofclojure.pages.thread-macro :as page-thread-macro]
             ))
 
 (defn get-lang
@@ -91,6 +92,7 @@
              "33" (page-filter/page 33 lang)
              "34" (page-remove/page 34 lang)
              "35" (page-reduce/page 35 lang)
+             "36" (page-thread-macro/page 36 lang)
              ))))
 
 (defroutes app-routes
