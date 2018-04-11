@@ -67,7 +67,7 @@
              "map2" (page-map-second/page "map1" "set" lang)
              "set" (page-set/page "map2" "list" lang)
              "list" (page-list/page "set" "sequences" lang)
-             "sequences" (page-sequences/page "set" "lazy" lang)
+             "sequences" (page-sequences/page "list" "lazy" lang)
              "lazy" (page-lazy/page "sequences" "variable" lang)
              "variable" (page-variable/page "lazy" "function" lang)
              "function" (page-functions/page "variable" "firstclass" lang)

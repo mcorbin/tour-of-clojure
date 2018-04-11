@@ -60,11 +60,12 @@
             " donne " [:b "(/ 1 100)"] " qui est le résultat final"]]
           [:h3 "Conclusion"]
           [:p "Les deux macros présentées ici sont celles que l'on rencontre le plus"
-           " souvent. Il en existe d'autres, qui sont présentées dans cet"
+           " souvent. Il en existe d'autres, qui sont présentées dans cet "
            (link-to "https://clojure.org/guides/threading_macros" "excellent guide")
            "."]
           [:p "Ces macros améliorent grandement la lisibilité du code, vous les"
-           " rencontrerez donc très souvent."]]
+           " rencontrerez donc très souvent."]
+          (navigation-block previous next)]
 
     [:h2 "Language not supported."]))
 
