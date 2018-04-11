@@ -6,7 +6,7 @@
   (slurp "resources/public/pages/code/thread_macro.clj"))
 
 (defn desc
-  [page-number lang]
+  [previous next lang]
   (condp = lang
     "fr" [:div
           [:h2 "Threading macros"]
@@ -69,8 +69,8 @@
     [:h2 "Language not supported."]))
 
 (defn page
-  [page-number lang]
-  [(desc page-number lang)
+  [previous next lang]
+  [(desc previous next lang)
    code])
 
 

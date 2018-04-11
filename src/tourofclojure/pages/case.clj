@@ -6,7 +6,7 @@
   (slurp "resources/public/pages/code/case.clj"))
 
 (defn desc
-  [page-number lang]
+  [previous next lang]
   (condp = lang
     "fr" [:div
           [:h2 "case"]
@@ -21,12 +21,12 @@
            " litéralles comme des entiers, des string...)."]
           [:p "Comme " [:b "condp"] ", " [:b "case"] " produira une exception"
            " si aucune clause ne match."]
-          (navigation-block page-number)]
+          (navigation-block previous next)]
 
     [:h2 "Language not supported."]))
 
 (defn page
-  [page-number lang]
-  [(desc page-number lang)
+  [previous next lang]
+  [(desc previous next lang)
    code])
 

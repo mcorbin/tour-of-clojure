@@ -6,7 +6,7 @@
   (slurp "resources/public/pages/code/fn_map_first.clj"))
 
 (defn desc
-  [page-number lang]
+  [previous next lang]
   (condp = lang
     "fr" [:div
           [:h2 "Opérations sur les Map: partie 1"]
@@ -24,11 +24,11 @@
            " que dans cet exemple " [:b ":foo"] " est équal à 2."]
           [:p "Nous reparlerons de cela dans un chapitre consacré aux manipulations"
            " de fonctions."]
-          (navigation-block page-number)]
+          (navigation-block previous next)]
 
     [:h2 "Language not supported."]))
 
 (defn page
-  [page-number lang]
-  [(desc page-number lang)
+  [previous next lang]
+  [(desc previous next lang)
    code])

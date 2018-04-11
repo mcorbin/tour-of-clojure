@@ -6,7 +6,7 @@
   (slurp "resources/public/pages/code/filter.clj"))
 
 (defn desc
-  [page-number lang]
+  [previous next lang]
   (condp = lang
     "fr" [:div
           [:h2 "filter"]
@@ -21,11 +21,11 @@
           [:p "filtrera tous les éléments impairs (" [:b "even?"] " sera appelé"
            " pour chaque élément du vector passé en paramètre)."]
           [:p [:b "filter"] " retourne une séquence lazy."]
-          (navigation-block page-number)]
+          (navigation-block previous next)]
     [:h2 "Language not supported."]))
 
 (defn page
-  [page-number lang]
-  [(desc page-number lang)
+  [previous next lang]
+  [(desc previous next lang)
    code])
 

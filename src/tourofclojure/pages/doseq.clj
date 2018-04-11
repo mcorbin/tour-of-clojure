@@ -6,7 +6,7 @@
   (slurp "resources/public/pages/code/doseq.clj"))
 
 (defn desc
-  [page-number lang]
+  [previous next lang]
   (condp = lang
     "fr" [:div
           [:h2 "doseq"]
@@ -45,11 +45,11 @@
            [:b ":when"] " pour filtrer tous les résultats inférieurs à 17."]
           [:p "Détail intéressant, le " (link-to {} "/pages/16" "destructuring")
            " fonctionne avec " [:b "doseq"] "."]
-          (navigation-block page-number)]
+          (navigation-block previous next)]
 
     [:h2 "Language not supported."]))
 
 (defn page
-  [page-number lang]
-  [(desc page-number lang)
+  [previous next lang]
+  [(desc previous next lang)
    code])

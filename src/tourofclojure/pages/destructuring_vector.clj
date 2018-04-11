@@ -6,7 +6,7 @@
   (slurp "resources/public/pages/code/destructuring_vector.clj"))
 
 (defn desc
-  [page-number lang]
+  [previous next lang]
   (condp = lang
     "fr" [:div
           [:h2 "Destructuring - Vector"]
@@ -55,12 +55,12 @@
            " les map. Vous pouvez également consulter le "
            (link-to {} "https://clojure.org/guides/destructuring" "guide de Clojure")
            " pour un tutoriel plus complet sur le destructuring."]
-          (navigation-block page-number)
+          (navigation-block previous next)
           ]
     [:h2 "Language not supported."]))
 
 (defn page
-  [page-number lang]
-  [(desc page-number lang)
+  [previous next lang]
+  [(desc previous next lang)
    code])
 

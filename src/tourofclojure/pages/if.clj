@@ -7,7 +7,7 @@
   (slurp "resources/public/pages/code/if.clj"))
 
 (defn desc
-  [page-number lang]
+  [previous next lang]
   (condp = lang
     "fr" [:div
           [:h2 "If"]
@@ -34,10 +34,10 @@
            " être utilisée dans la condition d'un if par exemple."]
           [:p "De la même manière, " [:b "and"] " retournera le premier de ses"
            " paramètres valant faux, ou bien retournera son dernier paramètre."]
-          (navigation-block page-number)]
+          (navigation-block previous next)]
     [:h2 "Language not supported."]))
 
 (defn page
-  [page-number lang]
-  [(desc page-number lang)
+  [previous next lang]
+  [(desc previous next lang)
    code])

@@ -6,7 +6,7 @@
   (slurp "resources/public/pages/code/for.clj"))
 
 (defn desc
-  [page-number lang]
+  [previous next lang]
   (condp = lang
     "fr" [:div
           [:h2 "for"]
@@ -14,10 +14,10 @@
           [:p "Il est semblable à " (link-to {} "/pages/26" "doseq") " sauf "
            " qu'ici " [:b "for"] " construira une séquence à partir du résultat"
            " de chaque itération."]
-          (navigation-block page-number)]
+          (navigation-block previous next)]
     [:h2 "Language not supported."]))
 
 (defn page
-  [page-number lang]
-  [(desc page-number lang)
+  [previous next lang]
+  [(desc previous next lang)
    code])

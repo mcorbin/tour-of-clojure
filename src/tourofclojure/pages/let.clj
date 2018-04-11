@@ -6,7 +6,7 @@
   (slurp "resources/public/pages/code/let.clj"))
 
 (defn desc
-  [page-number lang]
+  [previous next lang]
   (condp = lang
     "fr" [:div
           [:h2 "Let et variables locales"]
@@ -21,10 +21,10 @@
            " du nom. Dans ce cas, la form suivante sera exécutée mais son résultat"
            " ne sera assigné à aucune variable. Dans l'exemple de la fonction "
            [:b "bar"] ", on voit que " [:b "println"] " est appelé."]
-          (navigation-block page-number)]
+          (navigation-block previous next)]
     [:h2 "Language not supported."]))
 
 (defn page
-  [page-number lang]
-  [(desc page-number lang)
+  [previous next lang]
+  [(desc previous next lang)
    code])

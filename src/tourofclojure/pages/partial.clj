@@ -6,7 +6,7 @@
   (slurp "resources/public/pages/code/partial.clj"))
 
 (defn desc
-  [page-number lang]
+  [previous next lang]
   (condp = lang
     "fr" [:div
           [:h2 "partial"]
@@ -27,11 +27,11 @@
           [:p [:b "partial"] " est donc utilisée pour créer une nouvelle fonction"
            " à partir d'une fonction existante, en ajoutant des valeurs définies"
            " pour un certain nombre de paramètres."]
-          (navigation-block page-number)]
+          (navigation-block previous next)]
     [:h2 "Language not supported."]))
 
 (defn page
-  [page-number lang]
-  [(desc page-number lang)
+  [previous next lang]
+  [(desc previous next lang)
    code])
 

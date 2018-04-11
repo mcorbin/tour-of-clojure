@@ -6,7 +6,7 @@
   (slurp "resources/public/pages/code/apply.clj"))
 
 (defn desc
-  [page-number lang]
+  [previous next lang]
   (condp = lang
     "fr" [:div
           [:h2 "apply"]
@@ -22,12 +22,12 @@
           [:p "Ce code utilise " [:b "partial"] " pour créer une fonction"
            " qui ajoutera au vector " [:b "[1 2 3]"] " les paramètres passées."
            "On peut ensuite appeler cette fonction avec " [:b "apply"] "."]
-          (navigation-block page-number)]
+          (navigation-block previous next)]
     [:h2 "Language not supported."]))
 
 (defn page
-  [page-number lang]
-  [(desc page-number lang)
+  [previous next lang]
+  [(desc previous next lang)
    code])
 
 

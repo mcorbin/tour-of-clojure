@@ -2,11 +2,14 @@
   (:require [hiccup.element :refer [link-to]]))
 
 (defn navigation-block
-  [page-number]
+  [previous next]
    [:center
     [:p
-     (if (> page-number 1)
-       (link-to {} (str "/pages/" (dec page-number)) "Précédent")
+     (if previous
+       (link-to {} (str "/pages/" previous) "Précédent")
        "")
      " - "
-     (link-to {} (str "/pages/" (inc page-number)) "Suivant")]])
+     (if next
+       (link-to {} (str "/pages/" next) "Suivant")
+       "")
+     " - "]])

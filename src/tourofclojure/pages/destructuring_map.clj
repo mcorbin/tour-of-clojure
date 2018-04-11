@@ -6,7 +6,7 @@
   (slurp "resources/public/pages/code/destructuring_map.clj"))
 
 (defn desc
-  [page-number lang]
+  [previous next lang]
   (condp = lang
     "fr" [:div
           [:h2 "Destructuring - Map et defn"]
@@ -38,12 +38,12 @@
           [:p "Le destructuring est un outil très puissant. Vous pouvez combiner"
            " toutes les façons que nous avons vu pour destructurer des structures"
            " de données ensemble pour accéder à leur contenu de façon concise."]
-          (navigation-block page-number)]
+          (navigation-block previous next)]
     [:h2 "Language not supported."]))
 
 (defn page
-  [page-number lang]
-  [(desc page-number lang)
+  [previous next lang]
+  [(desc previous next lang)
    code])
 
 

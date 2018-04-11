@@ -6,7 +6,7 @@
   (slurp "resources/public/pages/code/if_let.clj"))
 
 (defn desc
-  [page-number lang]
+  [previous next lang]
   (condp = lang
     "fr" [:div
           [:h2 "if-let et when-let"]
@@ -39,11 +39,11 @@
            " seconde."]
           [:p [:b "when-let"] " est exactement la même chose que " [:b "if-let"]
            " pour " [:b "when"] "."]
-          (navigation-block page-number)
+          (navigation-block previous next)
           ]
     [:h2 "Language not supported."]))
 
 (defn page
-  [page-number lang]
-  [(desc page-number lang)
+  [previous next lang]
+  [(desc previous next lang)
    code])

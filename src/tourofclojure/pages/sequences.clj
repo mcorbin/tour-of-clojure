@@ -6,7 +6,7 @@
   (slurp "resources/public/pages/code/sequences.clj"))
 
 (defn desc
-  [page-number lang]
+  [previous next lang]
   (condp = lang
     "fr" [:div
           [:h2 "L'abstraction séquence"]
@@ -25,10 +25,10 @@
            [:code
             "Returns the first item in the collection. Calls seq on its argument. If coll is nil, returns nil."]]
           [:p "La chose est vraie aussi pour la fonction " [:b "rest" "."]]
-          (navigation-block page-number)]
+          (navigation-block previous next)]
     [:h2 "language not supported."]))
 
 (defn page
-  [page-number lang]
-  [(desc page-number lang)
+  [previous next lang]
+  [(desc previous next lang)
    code])

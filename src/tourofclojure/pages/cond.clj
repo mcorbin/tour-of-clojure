@@ -6,7 +6,7 @@
   (slurp "resources/public/pages/code/cond.clj"))
 
 (defn desc
-  [page-number lang]
+  [previous next lang]
   (condp = lang
     "fr" [:div
           [:h2 "cond"]
@@ -17,12 +17,12 @@
            ", tout vaut vrai. Vous pouvez donc facilement définir une clause par"
            " défaut, toujours évaluée à vrai, via un keyword par exemple."]
           [:p "Si aucune clause n'est vraie, cond retourne "  [:b "nil"]]
-          (navigation-block page-number)]
+          (navigation-block previous next)]
 
     [:h2 "Language not supported."]))
 
 (defn page
-  [page-number lang]
-  [(desc page-number lang)
+  [previous next lang]
+  [(desc previous next lang)
    code])
 

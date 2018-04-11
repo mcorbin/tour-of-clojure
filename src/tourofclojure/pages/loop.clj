@@ -6,7 +6,7 @@
   (slurp "resources/public/pages/code/loop.clj"))
 
 (defn desc
-  [page-number lang]
+  [previous next lang]
   (condp = lang
     "fr" [:div
           [:h2 "loop"]
@@ -53,10 +53,10 @@
            " son utilisation est très limitée. Il est plus intéressant d'utiliser"
            " des fonctions comme " [:b "map"] ", " [:b "reduce"] " ou " [:b "filter"]
            " que nous verrons dans la suite de ce tutoriel."]
-          (navigation-block page-number)]
+          (navigation-block previous next)]
     [:h2 "Language not supported."]))
 
 (defn page
-  [page-number lang]
-  [(desc page-number lang)
+  [previous next lang]
+  [(desc previous next lang)
    code])

@@ -6,7 +6,7 @@
   (slurp "resources/public/pages/code/fn_firstclass.clj"))
 
 (defn desc
-  [page-number lang]
+  [previous next lang]
   (condp = lang
     "fr" [:div
           [:h2 "Fonctions first class"]
@@ -17,12 +17,12 @@
           [:p "Ces exemples simples montrent quelques façons de manipuler des"
            " fonctions. Des techniques plus puissantes seront présentées dans la"
            " suite de ce tutoriel."]
-          (navigation-block page-number)]
+          (navigation-block previous next)]
 
     [:h2 "Language not supported."]))
 
 (defn page
-  [page-number lang]
-  [(desc page-number lang)
+  [previous next lang]
+  [(desc previous next lang)
    code])
 

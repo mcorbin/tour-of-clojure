@@ -6,7 +6,7 @@
   (slurp "resources/public/pages/code/variable.clj"))
 
 (defn desc
-  [page-number lang]
+  [previous next lang]
   (condp = lang
     "fr" [:div
           [:h2 "Définir une variable"]
@@ -23,11 +23,11 @@
            " effets de bords, ou de savoir quelle partie de votre programme"
            " possède une référence à une variable, car ces dernieres sont"
            " toujours immuables."]
-          (navigation-block page-number)]
+          (navigation-block previous next)]
     [:h2 "language not supported."]))
 
 (defn page
-  [page-number lang]
-  [(desc page-number lang)
+  [previous next lang]
+  [(desc previous next lang)
    code])
 

@@ -6,7 +6,7 @@
   (slurp "resources/public/pages/code/when_do.clj"))
 
 (defn desc
-  [page-number lang]
+  [previous next lang]
   (condp = lang
     "fr" [:div
           [:h2 "do et when"]
@@ -30,11 +30,11 @@
            " si la condition est fausse."]
           [:p "De plus, vous pouvez enchainer comme dans un " [:b "do"]
            " les forms à l'intérieur d'un " [:b "when"] "."]
-          (navigation-block page-number)]
+          (navigation-block previous next)]
     [:h2 "Language not supported."]))
 
 (defn page
-  [page-number lang]
-  [(desc page-number lang)
+  [previous next lang]
+  [(desc previous next lang)
    code])
 

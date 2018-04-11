@@ -54,7 +54,7 @@
 
           [:center
            [:p
-            (link-to {} "/pages/1" "Commencer le tutoriel")]] "."]
+            (link-to {} "/pages/types" "Commencer le tutoriel")]] "."]
     [:h2 "Language not supported."]))
 
 (defn index

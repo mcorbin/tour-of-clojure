@@ -6,18 +6,18 @@
   (slurp "resources/public/pages/code/while.clj"))
 
 (defn desc
-  [page-number lang]
+  [previous next lang]
   (condp = lang
     "fr" [:div
           [:h2 "while"]
           [:p [:b "while"] " permet de répéter une action (généralement un effet de "
            " bord) tant qu'une condition est vraie."]
           [:p ""]
-          (navigation-block page-number)]
+          (navigation-block previous next)]
     [:h2 "Language not supported."]))
 
 (defn page
-  [page-number lang]
-  [(desc page-number lang)
+  [previous next lang]
+  [(desc previous next lang)
    code])
 

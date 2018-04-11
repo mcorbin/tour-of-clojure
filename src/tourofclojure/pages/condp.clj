@@ -6,7 +6,7 @@
   (slurp "resources/public/pages/code/condp.clj"))
 
 (defn desc
-  [page-number lang]
+  [previous next lang]
   (condp = lang
     "fr" [:div
           [:h2 "condp"]
@@ -24,12 +24,12 @@
           [:p [:b "Attention"] ", contrairement à " [:b "cond"] " vu précédemment, "
            [:b "condp"] " retournera une exception si aucune clause ne match et "
            "qu'aucune valeur par défaut n'est fournie."]
-          (navigation-block page-number)]
+          (navigation-block previous next)]
 
     [:h2 "Language not supported."]))
 
 (defn page
-  [page-number lang]
-  [(desc page-number lang)
+  [previous next lang]
+  [(desc previous next lang)
    code])
 

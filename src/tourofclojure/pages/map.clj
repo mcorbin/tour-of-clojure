@@ -6,7 +6,7 @@
   (slurp "resources/public/pages/code/map.clj"))
 
 (defn desc
-  [page-number lang]
+  [previous next lang]
   (condp = lang
     "fr" [:div
           [:h2 "map"]
@@ -18,11 +18,11 @@
           [:pre [:code "(map inc [1 2 3 4])"]]
           [:p " permet d'incrémenter chaque élément du vector passé en paramètre."]
           [:p "Attention, le résultat de " [:b "map"] " est une séquence lazy."]
-          (navigation-block page-number)]
+          (navigation-block previous next)]
     [:h2 "Language not supported."]))
 
 (defn page
-  [page-number lang]
-  [(desc page-number lang)
+  [previous next lang]
+  [(desc previous next lang)
    code])
 

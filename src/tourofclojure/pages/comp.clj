@@ -7,7 +7,7 @@
   (slurp "resources/public/pages/code/comp.clj"))
 
 (defn desc
-  [page-number lang]
+  [previous next lang]
   (condp = lang
     "fr" [:div
           [:h2 "comp"]
@@ -31,11 +31,11 @@
            ". Il devient facile de définir des fonctions avec " [:b "partial"]
            " puis de les combiner avec " [:b "comp"] "."
            ]
-          (navigation-block page-number)]
+          (navigation-block previous next)]
 
     [:h2 "Language not supported."]))
 
 (defn page
-  [page-number lang]
-  [(desc page-number lang)
+  [previous next lang]
+  [(desc previous next lang)
    code])

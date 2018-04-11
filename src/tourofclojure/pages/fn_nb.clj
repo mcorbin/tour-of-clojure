@@ -6,7 +6,7 @@
   (slurp "resources/public/pages/code/fn_nb.clj"))
 
 (defn desc
-  [page-number lang]
+  [previous next lang]
   (condp = lang
     "fr" [:div
           [:h2 "Opérations sur les nombres"]
@@ -17,11 +17,11 @@
            " vous faites"
            " tourner Clojure (JVM, ClojureScript), car Clojure s'appuie sur les"
            " types de la plateforme hôte."]
-          (navigation-block page-number)]
+          (navigation-block previous next)]
 
     [:h2 "Language not supported."]))
 
 (defn page
-  [page-number lang]
-  [(desc page-number lang)
+  [previous next lang]
+  [(desc previous next lang)
    code])

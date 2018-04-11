@@ -6,7 +6,7 @@
   (slurp "resources/public/pages/code/functions.clj"))
 
 (defn desc
-  [page-number lang]
+  [previous next lang]
   (condp = lang
     "fr" [:div
           [:h2 "Définir une fonction"]
@@ -33,11 +33,11 @@
            [:b "#(...)"] ". Le " [:b "%"] " sera le paramètre de la fonction, et"
            " si la fonction possède plusieurs paramètres, on utilise "
            [:b "%1, %2, %3..." " pour les représenter."]]
-          (navigation-block page-number)]
+          (navigation-block previous next)]
     [:h2 "language not supported."]))
 
 (defn page
-  [page-number lang]
-  [(desc page-number lang)
+  [previous next lang]
+  [(desc previous next lang)
    code])
 

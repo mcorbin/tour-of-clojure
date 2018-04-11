@@ -6,7 +6,7 @@
   (slurp "resources/public/pages/code/fn_set.clj"))
 
 (defn desc
-  [page-number lang]
+  [previous next lang]
   (condp = lang
     "fr" [:div
           [:h2 "Opérations sur les Set"]
@@ -21,11 +21,11 @@
           [:p "vous pouvez retrouver "
            (link-to {} "https://clojure.github.io/clojure/clojure.set-api.html" "ici")
            " d'autres fonctions pour manipuler les set."]
-          (navigation-block page-number)]
+          (navigation-block previous next)]
 
     [:h2 "Language not supported."]))
 
 (defn page
-  [page-number lang]
-  [(desc page-number lang)
+  [previous next lang]
+  [(desc previous next lang)
    code])
