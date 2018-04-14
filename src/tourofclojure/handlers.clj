@@ -46,6 +46,13 @@
             [tourofclojure.pages.reduce :as page-reduce]
             [tourofclojure.pages.thread-macro :as page-thread-macro]
             [tourofclojure.pages.atom :as page-atom]
+            [tourofclojure.pages.ref :as page-ref]
+            [tourofclojure.pages.agent :as page-agent]
+            [tourofclojure.pages.more-thread :as page-more-thread]
+            [tourofclojure.pages.namespaces :as page-namespaces]
+            [tourofclojure.pages.macros :as page-macros]
+            [tourofclojure.pages.repl-driven :as page-repl]
+            [tourofclojure.pages.ide :as page-ide]
             ))
 
 (defn get-lang
@@ -94,7 +101,14 @@
              "remove" (page-remove/page "filter" "reduce" lang)
              "reduce" (page-reduce/page "remove" "thread-macro" lang)
              "thread-macro" (page-thread-macro/page "reduce" "atom" lang)
-             "atom" (page-atom/page "thread-macro" nil lang)
+             "atom" (page-atom/page "thread-macro" "ref" lang)
+             "ref" (page-ref/page "atom" "agent" lang)
+             "agent" (page-agent/page "ref" "more-thread" lang)
+             "more-thread" (page-more-thread/page "agent" "namespaces" lang)
+             "namespaces" (page-namespaces/page "more-thread" "macros" lang)
+             "macros" (page-macros/page "namespaces" "repl" lang)
+             "repl" (page-repl/page "macros" "ide" lang)
+             "ide" (page-ide/page "repl" nil lang)
              )
            )))
 

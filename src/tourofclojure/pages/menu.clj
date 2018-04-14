@@ -58,9 +58,9 @@
             [:h3 "Programmation concurrente et parallèle"]
             [:ul
              [:li (link-to {} "/pages/atom" "atom")]
-             [:li (link-to {} "/pages/30" "refs")]
-             [:li (link-to {} "/pages/31" "agents")]
-             [:li (link-to {} "/pages/31" "core async")]
+             [:li (link-to {} "/pages/30" "ref")]
+             [:li (link-to {} "/pages/31" "agent")]
+             [:li (link-to {} "/pages/31" "core.async")]
              [:li (link-to {} "/pages/31" "Pour aller plus loin")]]
             [:h3 "Namespaces et macros"]
             [:ul
