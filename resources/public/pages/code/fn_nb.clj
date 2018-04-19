@@ -12,4 +12,8 @@
 
 (println (dec 1))
 
+;; rounded quotient
 (println (quot 10 3))
+
+;; modulus
+(println (mod 10 3))
