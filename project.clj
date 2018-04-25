@@ -1,6 +1,6 @@
 (defproject mcorbin/tourofclojure "0.0.1-SNAPSHOT"
   :description "An interactive Clojure tutorial"
-  :url "https://github.com/mcorbin/tour-of-clojure&"
+  :url "https://github.com/mcorbin/tour-of-clojure"
   :dependencies [[org.clojure/clojure "1.9.0"]
                  [org.clojure/tools.logging "0.4.0"]
                  [cheshire "5.8.0"]
