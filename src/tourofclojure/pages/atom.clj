@@ -41,8 +41,13 @@
           [:p "Il est aussi possible de passer à swap l'atom et directement une"
            " fonction prenant un paramètre (exemple 2). Dans ce cas, la valeur de l'atom"
            " sera le paramètre de cette fonction, et le résultat la nouvelle valeur"
-           " de l'atom."
-           ]
+           " de l'atom."]
+          [:p "Une autre opération intéressante est " [:b "reset!"] ", qui permet"
+           " d'assigner à un atom une valeur:"]
+          [:pre [:code "(reset! my-atom [100])"]]
+          [:p "Ici, la nouvelle valeur de l'atom sera " [:b "100"] "."]
+          [:h3 "Concurrence"]
+          [:p "TODO"]
           ]
 
     [:h2 "Language not supported."])
