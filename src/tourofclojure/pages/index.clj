@@ -13,7 +13,7 @@
           [:p]
           [:p [:b "Note: Ce tutoriel est en construction !"
                " Il manque donc beaucoup de choses et des erreurs sont probablement"
-               "présentes."]]
+               " présentes."]]
           [:p "Bienvenue pour une introduction sur le langage "
            (link-to {} "http://clojure.org" "Clojure") "."]
 
