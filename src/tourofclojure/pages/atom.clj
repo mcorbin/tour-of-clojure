@@ -1,10 +1,10 @@
 (ns tourofclojure.pages.atom
   (:require [hiccup.element :refer [link-to]]
-            [tourofclojure.pages.util :refer [navigation-block]]))
-
+            [tourofclojure.pages.util :refer [navigation-block]]
+            [clojure.java.io :as io]))
 
 (def code
-  (slurp "resources/public/pages/code/atom.clj"))
+  (slurp (io/resource "public/pages/code/atom.clj")))
 
 (defn desc
   [previous next lang]

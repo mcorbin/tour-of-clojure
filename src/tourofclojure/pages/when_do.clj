@@ -1,9 +1,10 @@
 (ns tourofclojure.pages.when-do
   (:require [hiccup.element :refer [link-to]]
+            [clojure.java.io :as io]
             [tourofclojure.pages.util :refer [navigation-block]]))
 
 (def code
-  (slurp "resources/public/pages/code/when_do.clj"))
+  (slurp (io/resource "public/pages/code/when_do.clj")))
 
 (defn desc
   [previous next lang]

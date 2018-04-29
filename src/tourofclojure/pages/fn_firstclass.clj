@@ -1,9 +1,10 @@
 (ns tourofclojure.pages.fn-firstclass
   (:require [hiccup.element :refer [link-to]]
+            [clojure.java.io :as io]
             [tourofclojure.pages.util :refer [navigation-block]]))
 
 (def code
-  (slurp "resources/public/pages/code/fn_firstclass.clj"))
+  (slurp (io/resource "public/pages/code/fn_firstclass.clj")))
 
 (defn desc
   [previous next lang]

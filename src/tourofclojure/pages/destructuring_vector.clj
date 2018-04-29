@@ -1,9 +1,10 @@
 (ns tourofclojure.pages.destructuring-vector
   (:require [hiccup.element :refer [link-to]]
+            [clojure.java.io :as io]
             [tourofclojure.pages.util :refer [navigation-block]]))
 
 (def code
-  (slurp "resources/public/pages/code/destructuring_vector.clj"))
+  (slurp (io/resource "public/pages/code/destructuring_vector.clj")))
 
 (defn desc
   [previous next lang]

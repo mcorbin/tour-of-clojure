@@ -1,9 +1,10 @@
 (ns tourofclojure.pages.core-async
   (:require [hiccup.element :refer [link-to]]
+            [clojure.java.io :as io]
             [tourofclojure.pages.util :refer [navigation-block]]))
 
 (def code
-  (slurp "resources/public/pages/code/core_async.clj"))
+  (slurp (io/resource "public/pages/code/core_async.clj")))
 
 (defn desc
   [previous next lang]

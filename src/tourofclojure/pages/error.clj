@@ -1,8 +1,9 @@
 (ns tourofclojure.pages.error
   (:require [hiccup.element :refer [link-to]]
+            [clojure.java.io :as io]
             [tourofclojure.pages.util :refer [navigation-block]]))
 (def code
-  (slurp "resources/public/pages/code/error.clj"))
+  (slurp (io/resource "public/pages/code/error.clj")))
 
 (defn desc
   [previous next lang]

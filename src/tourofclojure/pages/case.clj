@@ -1,9 +1,10 @@
 (ns tourofclojure.pages.case
   (:require [hiccup.element :refer [link-to]]
+            [clojure.java.io :as io]
             [tourofclojure.pages.util :refer [navigation-block]]))
 
 (def code
-  (slurp "resources/public/pages/code/case.clj"))
+  (slurp (io/resource "public/pages/code/case.clj")))
 
 (defn desc
   [previous next lang]

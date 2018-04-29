@@ -1,8 +1,9 @@
 (ns tourofclojure.pages.index
-  (:require [hiccup.element :refer [link-to]]))
+  (:require [hiccup.element :refer [link-to]]
+            [clojure.java.io :as io]))
 
 (def code
-  (slurp "resources/public/pages/code/index.clj"))
+  (slurp (io/resource "public/pages/code/index.clj")))
 
 (defn desc
   [lang]
@@ -10,7 +11,9 @@
     "fr" [:div
           [:h2 "Bonjour !"]
           [:p]
-          [:p [:b "Note: Ce tutoriel est en construction !"]]
+          [:p [:b "Note: Ce tutoriel est en construction !"
+               " Il manque donc beaucoup de choses et des erreurs sont probablement"
+               "présentes."]]
           [:p "Bienvenue pour une introduction sur le langage "
            (link-to {} "http://clojure.org" "Clojure") "."]
 

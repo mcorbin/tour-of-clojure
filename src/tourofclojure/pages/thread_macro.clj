@@ -1,9 +1,10 @@
 (ns tourofclojure.pages.thread-macro
   (:require [hiccup.element :refer [link-to]]
+            [clojure.java.io :as io]
             [tourofclojure.pages.util :refer [navigation-block]]))
 
 (def code
-  (slurp "resources/public/pages/code/thread_macro.clj"))
+  (slurp (io/resource "public/pages/code/thread_macro.clj")))
 
 (defn desc
   [previous next lang]

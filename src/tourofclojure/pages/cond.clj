@@ -1,9 +1,10 @@
 (ns tourofclojure.pages.cond
   (:require [hiccup.element :refer [link-to]]
+            [clojure.java.io :as io]
             [tourofclojure.pages.util :refer [navigation-block]]))
 
 (def code
-  (slurp "resources/public/pages/code/cond.clj"))
+  (slurp (io/resource "public/pages/code/cond.clj")))
 
 (defn desc
   [previous next lang]

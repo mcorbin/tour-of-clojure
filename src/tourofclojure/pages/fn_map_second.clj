@@ -1,9 +1,10 @@
 (ns tourofclojure.pages.fn-map-second
   (:require [hiccup.element :refer [link-to]]
+            [clojure.java.io :as io]
             [tourofclojure.pages.util :refer [navigation-block]]))
 
 (def code
-  (slurp "resources/public/pages/code/fn_map_second.clj"))
+  (slurp (io/resource "public/pages/code/fn_map_second.clj")))
 
 (defn desc
   [previous next lang]

@@ -1,9 +1,10 @@
 (ns tourofclojure.pages.fn-map-first
   (:require [hiccup.element :refer [link-to]]
+            [clojure.java.io :as io]
             [tourofclojure.pages.util :refer [navigation-block]]))
 
 (def code
-  (slurp "resources/public/pages/code/fn_map_first.clj"))
+  (slurp (io/resource "public/pages/code/fn_map_first.clj")))
 
 (defn desc
   [previous next lang]

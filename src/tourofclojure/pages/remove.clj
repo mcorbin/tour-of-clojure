@@ -1,10 +1,10 @@
 (ns tourofclojure.pages.remove
   (:require [hiccup.element :refer [link-to]]
+            [clojure.java.io :as io]
             [tourofclojure.pages.util :refer [navigation-block]]))
 
-
 (def code
-  (slurp "resources/public/pages/code/remove.clj"))
+  (slurp (io/resource "public/pages/code/remove.clj")))
 
 (defn desc
   [previous next lang]
