@@ -11,10 +11,12 @@
   (condp = lang
     "fr" [:div
           [:h2 "Opérations sur les Vector"]
-          [:p "Voici quelques opérations sur les Vector."]
-          [:p "Les Vector sont une structure de donnée très utilisée en Clojure."]
-          [:p "Un grand nombre de fonctions peuvent manipuler et retourner des"
-           " Vector, en voici un certain nombre."]
+          [:p "Je présente ici quelques opérations sur les Vector, qui est"
+           " une structure de donnée énormément utilisée en Clojure."]
+          [:p "Par exemple, la fonction " [:b "conj"] " permet d'ajouter "
+           " un élément à un vector:"]
+          [:pre [:code "(conj [1 2 3] 4)"]]
+          [:p "donnera comme résultat " [:b "[1 2 3 4]"] "."]
           [:p "Comme vous pouvez le constater, de nombreuses fonctions manipulant"
            " des structures de données en Clojure peuvent prendre un nombre"
            " variable d'arguments. C'est par exemple le cas de " [:b "conj"]

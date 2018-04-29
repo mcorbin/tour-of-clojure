@@ -15,6 +15,36 @@
            " complexe de Map en Clojure."]
           [:p "En voici quelques unes permettant notamment"
            " de manipuler des maps imbriquées de façon simple."]
+          [:p "En Clojure on se retrouve souvent face à des structures"
+           " de données qui peuvent s'avérer complexes. Heureusement, la librairie"
+           " standard est généralement assez riche pour travailler sur ces"
+           " données sans complications inutiles."]
+          [:h3 "assoc-in"]
+          [:p "La fonction " [:b "assoc-in"] " permet d'associer une clé à "
+           " une valeur (comme " [:b "assoc"] ") dans une map "
+           "imbriquée dans une ou plusieurs autres map."]
+          [:pre [:code "{:foo {:bar {:hello \"hello\"}}}"]]
+          [:p "La structure de donnée précédente est une imbrication de trois"
+           " map. Comment mettre à jour facilement la map la plus imbriquée (celle"
+           " contenant la clé " [:b ":hello"] ") ?"]
+          [:pre [:code "(assoc-in {:foo {:bar {:hello \"hello\"}}}
+          [:foo :bar :goodbye] \"goodbye\")"]]
+          [:p "Le code précédent traversera les deux premières map en utilisant"
+           " les clés " [:b ":foo  et :bar"] " et ensuite associera à la dernière"
+           " clé du vector passé en paramètre (" [:b ":goodbye"] ") la valeur "
+           [:b "goodbye."]]
+          [:h3 "get-in"]
+          [:p "Cette fonction permet de récupérer une valeur présente dans"
+           " plusieurs map imbriquées. Par exemple, pour récupérer la valeur de la"
+           "clé " [:b ":hello"] " dans la map précédente, on pourra faire:"
+           [:pre [:code "(get-in {:foo {:bar {:hello \"hello\"}}}
+        [:foo :bar :hello])"]]]
+          [:h3 "update-in"]
+          [:p "Cette fonction permet de mettre à jour une valeur dans une map"
+           " imbriquée. Par exemple:"]
+          [:pre [:code "(update-in {:foo {:bar {:hello 1}}}
+          [:foo :bar :hello] inc"]]
+          [:p "incrémentera la valeur de la clé " [:b "hello"] "."]
 
           (navigation-block previous next)]
 
