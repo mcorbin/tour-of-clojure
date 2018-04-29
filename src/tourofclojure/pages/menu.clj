@@ -58,17 +58,17 @@
             [:h3 "Programmation concurrente et parallèle"]
             [:ul
              [:li (link-to {} "/pages/atom" "atom")]
-             [:li (link-to {} "/pages/30" "ref")]
-             [:li (link-to {} "/pages/31" "agent")]
-             [:li (link-to {} "/pages/31" "core.async")]
-             [:li (link-to {} "/pages/31" "Pour aller plus loin")]]
+             [:li (link-to {} "/pages/ref" "ref")]
+             [:li (link-to {} "/pages/agent" "agent")]
+             [:li (link-to {} "/pages/core-async" "core.async")]
+             [:li (link-to {} "/pages/more-thread" "Pour aller plus loin")]]
             [:h3 "Namespaces et macros"]
             [:ul
-             [:li (link-to {} "/pages/3" "Namespaces")]
-             [:li (link-to {} "/pages/3" "Macros")]]
+             [:li (link-to {} "/pages/namespaces" "Namespaces")]
+             [:li (link-to {} "/pages/macros" "Macros")]]
             [:h3 "Développer en Clojure"]
             [:ul
-             [:li (link-to {} "/pages/3" "Repl Driven Development")]
-             [:li (link-to {} "/pages/3" "IDE")]]
+             [:li (link-to {} "/pages/repl" "Repl Driven Development")]
+             [:li (link-to {} "/pages/ide" "IDE")]]
             ]]]
     [:h2 "Language not supported"]))

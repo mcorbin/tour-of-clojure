@@ -48,6 +48,7 @@
             [tourofclojure.pages.atom :as page-atom]
             [tourofclojure.pages.ref :as page-ref]
             [tourofclojure.pages.agent :as page-agent]
+            [tourofclojure.pages.core-async :as page-core-async]
             [tourofclojure.pages.more-thread :as page-more-thread]
             [tourofclojure.pages.namespaces :as page-namespaces]
             [tourofclojure.pages.macros :as page-macros]
@@ -103,7 +104,8 @@
              "thread-macro" (page-thread-macro/page "reduce" "atom" lang)
              "atom" (page-atom/page "thread-macro" "ref" lang)
              "ref" (page-ref/page "atom" "agent" lang)
-             "agent" (page-agent/page "ref" "more-thread" lang)
+             "agent" (page-agent/page "ref" "core-async" lang)
+             "core-async" (page-core-async/page "agent" "more-thread" lang)
              "more-thread" (page-more-thread/page "agent" "namespaces" lang)
              "namespaces" (page-namespaces/page "more-thread" "macros" lang)
              "macros" (page-macros/page "namespaces" "repl" lang)

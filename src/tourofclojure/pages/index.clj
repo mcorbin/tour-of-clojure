@@ -10,6 +10,7 @@
     "fr" [:div
           [:h2 "Bonjour !"]
           [:p]
+          [:p [:b "Note: Ce tutoriel est en construction !"]]
           [:p "Bienvenue pour une introduction sur le langage "
            (link-to {} "http://clojure.org" "Clojure") "."]
 
