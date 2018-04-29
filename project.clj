@@ -1,4 +1,4 @@
-(defproject mcorbin/tourofclojure "0.0.1-SNAPSHOT"
+(defproject mcorbin/tourofclojure "0.0.1"
   :description "An interactive Clojure tutorial"
   :url "https://github.com/mcorbin/tour-of-clojure"
   :dependencies [[org.clojure/clojure "1.9.0"]
@@ -16,7 +16,6 @@
   :ring {:handler tourofclojure.handlers/app}
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
-  :uberjar-name "tourofclojure.jar"
   :main tourofclojure.core
   :source-paths ["src"]
   :profiles {:dev {:dependencies [[javax.servlet/servlet-api "2.5"]
