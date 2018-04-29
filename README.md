@@ -1,3 +1,5 @@
 # A tour of Clojure
 
-Interactive Clojure tutorial. Available soon !
+Interactive Clojure tutorial.
+
+tour.mcorbin.fr (WIP)
