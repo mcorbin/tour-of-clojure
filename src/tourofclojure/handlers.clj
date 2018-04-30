@@ -123,6 +123,7 @@
   (GET "/lang/:lang" [lang] (assoc (redirect "/")
                                    :cookies {"lang"
                                              {:value lang
+                                              :secure true
                                               :path "/"
                                               :max-age 1000000
                                               :http-only true}}))
