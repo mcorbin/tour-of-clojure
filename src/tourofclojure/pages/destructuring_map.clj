@@ -35,6 +35,10 @@
           [:h3 "Et les fonctions ?"]
           [:p "Le destructuring ne s'utilise pas que dans les clauses " [:b "let"]
            ". Vous pouvez aussi l'utiliser dans les paramètres de fonctions !"]
+          [:p "C'est d'ailleurs comme cela que vous pouvez écrire des fonctions"
+           " prenant en paramètre un nombre indéfini d'éléments (en déstructurant"
+           " le vector des paramètres)."
+           ]
           [:h3 "Conclusion"]
           [:p "Le destructuring est un outil très puissant. Vous pouvez combiner"
            " toutes les façons que nous avons vu pour destructurer des structures"
