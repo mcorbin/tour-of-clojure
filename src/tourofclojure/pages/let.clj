@@ -18,6 +18,14 @@
            " nom/valeur. Plus précisément, la syntaxe de " [:b "let"]
            " peut être décrite comme "
            [:b "[name1 value1 name2 value2 ...]"] "."]
+          [:pre [:code "(defn foo
+  [a]
+  (let [b (conj [10 20] 30)
+        c (conj b a)]
+    c))"]]
+          [:p "Dans l'exemple précédent, on déclare deux variables: " [:b "b"]
+           " et " [:b "c"] ", et on retourne " [:b "c"] "." " On remarque"
+           " que l'on utilise " [:b "b"] " dans la définition de "[:b "c"] "."]
           [:p "Il est possible d'utiliser le symbole " [:b "_"] " à la place"
            " du nom. Dans ce cas, la form suivante sera exécutée mais son résultat"
            " ne sera assigné à aucune variable. Dans l'exemple de la fonction "
