@@ -20,11 +20,10 @@
           [:p "Si aucune clause n'est vraie, cond retourne "  [:b "nil"]]
           (navigation-block previous next)
           [:h2 "Un exemple"]
-          [:pre [:code
-                 "(println (cond
-           (= 1 2) \"1 == 2 ?!\"
-           (= 1 3) \"1 == 3 ?!\"
-           :default \"A default value\"))"]]
+          [:pre [:code "(cond
+ (= 1 2) \"1 == 2 ?!\"
+ (= 1 3) \"1 == 3 ?!\"
+ :default \"A default value\")"]]
           [:p "On voit ici que l'on teste plusieurs conditions. Aucune condition"
            " n'est valide, ce sera donc la condition par défaut qui sera "
            "exécutée et cette expression retournera la chaîne "

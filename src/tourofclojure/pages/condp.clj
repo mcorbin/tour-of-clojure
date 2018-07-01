@@ -25,6 +25,15 @@
           [:p [:b "Attention"] ", contrairement à " [:b "cond"] " vu précédemment, "
            [:b "condp"] " retournera une exception si aucune clause ne match et "
            "qu'aucune valeur par défaut n'est fournie."]
+          [:h2 "Un exemple"]
+          [:pre [:code "(condp = 1
+  2 \"1 == 2 ?!\"
+  3 \"3 == 1 !\"
+  \"default value\")"]]
+          [:p "Ici, on va tout d'abord tester " [:b "(= 1 2)"] ", puis"
+           [:b "(= 1 3)"] "." "Vu qu'aucune de ces conditions est vraie, "
+           " la valeur par défaut " [:b "default value"] " sera retournée."
+           ]
           (navigation-block previous next)]
 
     [:h2 "Language not supported."]))
