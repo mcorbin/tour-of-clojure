@@ -11,7 +11,6 @@
     [:meta {:name "viewport"
             :content "width=device-width, initial-scale=1, shrink-to-fit=no"}]
     [:title "A tour of Clojure"]
-    (include-js "/js/clojure.min.js")
     (include-css "/css/bootstrap.min.css")
     (include-js "/js/jquery-3.2.1.slim.min.js")
     (include-js "/js/popper.min.js")
@@ -21,7 +20,6 @@
     (include-css "/css/highlight.css")
     (include-js "/js/highlight.pack.js")
 
-
     (include-css "/css/codemirror.css")
     (include-js "/js/script.js")
 
@@ -30,4 +28,5 @@
      [:div {:class "clear"}]
      [:div {:id "page"} content]
      (include-js "/js/klipse_plugin.js")
+     (include-js "/js/clojure.min.js")
      footer]]))
