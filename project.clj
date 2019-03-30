@@ -1,11 +1,11 @@
 (defproject mcorbin/tourofclojure "0.0.5"
   :description "An interactive Clojure tutorial"
   :url "https://github.com/mcorbin/tour-of-clojure"
-  :dependencies [[org.clojure/clojure "1.9.0"]
-                 [org.clojure/tools.logging "0.4.0"]
+  :dependencies [[org.clojure/clojure "1.10.0"]
+                 [org.clojure/tools.logging "0.4.1"]
                  [cheshire "5.8.0"]
                  [circleci/clj-yaml "0.5.6"]
-                 [compojure "1.6.0"]
+                 [compojure "1.6.1"]
                  [environ "1.1.0"]
                  [hiccup "1.0.5"]
                  [mount "0.1.11"]
