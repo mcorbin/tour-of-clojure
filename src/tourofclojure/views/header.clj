@@ -10,7 +10,7 @@
      [:div {:class "float-left"}
       (image {} "/images/clojure-logo.png" "Clojure logo")
       (link-to {} "/"
-               [:h1 "A tour of Clojure (Alpha version)"])]]
+               [:h1 "A tour of Clojure"])]]
     [:div {:class "clear"}]
     [:div {:class "col-sm"}
      [:div {:class "float-right"}
