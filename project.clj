@@ -1,4 +1,4 @@
-(defproject mcorbin/tourofclojure "0.0.5"
+(defproject mcorbin/tourofclojure "0.0.6"
   :description "An interactive Clojure tutorial"
   :url "https://github.com/mcorbin/tour-of-clojure"
   :dependencies [[org.clojure/clojure "1.10.0"]
