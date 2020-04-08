@@ -35,7 +35,7 @@
            [:b "goodbye."]]
           [:h3 "get-in"]
           [:p "Cette fonction permet de récupérer une valeur présente dans"
-           " plusieurs map imbriquées. Par exemple, pour récupérer la valeur de la"
+           " plusieurs map imbriquées. Par exemple, pour récupérer la valeur de la "
            "clé " [:b ":hello"] " dans la map précédente, on pourra faire:"
            [:pre [:code "(get-in {:foo {:bar {:hello \"hello\"}}}
         [:foo :bar :hello])"]]]

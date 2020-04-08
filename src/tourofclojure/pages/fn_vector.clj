@@ -14,7 +14,7 @@
           [:p "Je présente ici quelques opérations sur les Vector, qui est"
            " une structure de donnée énormément utilisée en Clojure."]
           [:p "Par exemple, la fonction " [:b "conj"] " permet d'ajouter "
-           " un élément à un vector:"]
+           " un élément à la fin d'un vector:"]
           [:pre [:code "(conj [1 2 3] 4)"]]
           [:p "donnera comme résultat " [:b "[1 2 3 4]"] "."]
           [:p "Comme vous pouvez le constater, de nombreuses fonctions manipulant"

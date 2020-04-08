@@ -12,10 +12,10 @@
     "fr" [:div
           [:h2 "Structures de données"]
           [:p "La puissance de Clojure réside dans ses structures de données."
-           " Nous pésentons ici les principales structures de données utilisées"
+           " Je montrerai ici les principales structures de données utilisées"
            " dans Clojure. Dans la section suivante, nous verrons les opérations"
            " possibles sur ces structures de données."]
-          [:p "Je présenterais dans la suite de ce tutoriel les fonctions de base"
+          [:p "Je présenterai dans la suite de ce tutoriel les fonctions de base"
            " pour manipuler des structures de données. Mais il en existe de"
            " nombreuses autres, la librairie standard de Clojure étant très riche."]
           [:h4 "Vector"]

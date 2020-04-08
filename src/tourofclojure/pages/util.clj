@@ -1,6 +1,5 @@
 (ns tourofclojure.pages.util
-  (:require [hiccup.element :refer [link-to]]
-            [clojure.java.io :as io]))
+  (:require [hiccup.element :refer [link-to]]))
 
 (defn navigation-block
   [previous next]

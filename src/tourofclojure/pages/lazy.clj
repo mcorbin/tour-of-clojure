@@ -20,7 +20,7 @@
   (lazy-seq (cons (do (println n \"!\") n) (numbers (inc n)))))
 "]]
           [:p "La fonction récursive " [:b "numbers"] " prend un paramètre et retourne une "
-           "séquence lazy contenant tous les entiers supérieurs ou égal à " [:b "n"] "."
+           "séquence lazy contenant tous les entiers supérieurs ou égaux à " [:b "n"] "."
            " La fonction appelle également " [:b "println"] " pour chaque entier."]
           [:p "La variable " [:b "s"] " contient le résultat de la fonction "
            [:b "numbers"] ". A ce moment, on voit que " [:b "println"] " n'a"

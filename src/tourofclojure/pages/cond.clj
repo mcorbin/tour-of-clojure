@@ -18,7 +18,6 @@
            ", tout vaut vrai. Vous pouvez donc facilement définir une clause par"
            " défaut, toujours évaluée à vrai, via un keyword par exemple."]
           [:p "Si aucune clause n'est vraie, cond retourne "  [:b "nil"]]
-          (navigation-block previous next)
           [:h2 "Un exemple"]
           [:pre [:code "(cond
  (= 1 2) \"1 == 2 ?!\"
@@ -29,8 +28,9 @@
            "exécutée et cette expression retournera la chaîne "
            [:b "A default value"] "."]
           [:p "En effet, comme vu précédemment, un keyword est considéré"
-           " comme " [:b "true"] ". Le résultat serait le même avec ue chaîne,"
+           " comme " [:b "true"] ". Le résultat serait le même avec une chaîne,"
            " un nombre ... excepté " [:b "nil"] " et " [:b " false"] "."]
+          (navigation-block previous next)
           ]
 
     [:h2 "Language not supported."]))

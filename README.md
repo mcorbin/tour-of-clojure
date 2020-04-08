@@ -2,4 +2,4 @@
 
 Interactive Clojure tutorial.
 
-tour.mcorbin.fr (WIP)
+tour.mcorbin.fr
