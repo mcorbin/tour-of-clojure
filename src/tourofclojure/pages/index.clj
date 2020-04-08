@@ -11,9 +11,9 @@
     "fr" [:div
           [:h2 "Bonjour !"]
           [:p]
-          [:p [:b "Note: Ce tutoriel est en construction !"
-               " Il manque donc beaucoup de choses et des erreurs sont probablement"
-               " présentes."]]
+          [:p [:b "Ce tutoriel est encore en construction !"
+               " Le contenu de certaines sections est manquant."
+               ]]
           [:p "Bienvenue pour une introduction sur le langage "
            (link-to {} "http://clojure.org" "Clojure") "."]
 
