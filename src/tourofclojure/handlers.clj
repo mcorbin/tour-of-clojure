@@ -7,6 +7,7 @@
             [ring.util.response :refer [response content-type redirect]]
             [tourofclojure.views.app :as app-view]
             [tourofclojure.views.page :as page]
+            [tourofclojure.views.page-non-interactive :as page-non-interactive]
             [tourofclojure.pages.index :as index]
             [tourofclojure.pages.menu :as menu]
             [tourofclojure.pages.datastructures :as page-datastructures]
@@ -56,6 +57,9 @@
             [tourofclojure.pages.ide :as page-ide]
             ))
 
+(def non-interactives
+  ["ref"])
+
 (defn get-lang
   [cookies]
   (:value (get cookies "lang") "fr"))
@@ -63,8 +67,9 @@
 (defn get-page
   [params cookies]
   (let [id (:id params)
-        lang (get-lang cookies)]
-    (apply page/page
+        lang (get-lang cookies)
+        page-fn (if (some #(= % id) non-interactives) page-non-interactive/page page/page)]
+    (apply page-fn
            (condp = id
              "types" (page-types/page nil "forms" lang)
              "forms" (page-forms/page "types" "fn-nb" lang)
