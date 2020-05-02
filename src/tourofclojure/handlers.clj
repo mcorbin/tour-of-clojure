@@ -57,8 +57,7 @@
             [tourofclojure.pages.ide :as page-ide]
             ))
 
-(def non-interactives
-  ["ref"])
+(def non-interactives #{"ref"})
 
 (defn get-lang
   [cookies]
@@ -68,7 +67,7 @@
   [params cookies]
   (let [id (:id params)
         lang (get-lang cookies)
-        page-fn (if (some #(= % id) non-interactives) page-non-interactive/page page/page)]
+        page-fn (if (contains? non-interactives id) page-non-interactive/page page/page)]
     (apply page-fn
            (condp = id
              "types" (page-types/page nil "forms" lang)
