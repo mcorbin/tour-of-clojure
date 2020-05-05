@@ -22,7 +22,7 @@
 (println @account1)
 (println @account2 "\n")
 
-;; commute can be used if the order of the operations in the transaction does not matter
+;; commute can be used if the order of the operations between transactions does not matter
 ;; (cannot always be used)
 (dosync
   (commute account1 #(- % 100))
