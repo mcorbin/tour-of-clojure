@@ -29,4 +29,5 @@
      [:div {:id "page"} content]
      (include-js "/js/klipse_plugin.js")
      (include-js "/js/clojure.min.js")
+     (include-js "/js/script-non-interactive.js")
      footer]]))

@@ -21,7 +21,7 @@
   :profiles {:dev {:dependencies [[javax.servlet/servlet-api "2.5"]
                                   [pjstadig/humane-test-output "0.10.0"]
                                   [ring/ring-mock "0.4.0"]]
-                   :plugins [[lein-ring "0.12.2"]
+                   :plugins [[lein-ring "0.12.5"]
                              [lein-environ "1.1.0"]
                              [lein-ancient "0.6.15"]]
                    :env {:config-path "dev/resources/config.yml"}
