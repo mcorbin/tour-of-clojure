@@ -36,7 +36,8 @@
   (ref-set account1 0)
   (ref-set account2 0))"]]
           [:h3 "Attention"]
-          [:p "Les transactions pouvant potentiellement se relancer plusieurs fois, leur utilisation n'est pas recommandée pour les opérations qui provoquent des effets de bord (I/O)."]]
+          [:p "Les transactions pouvant potentiellement se relancer plusieurs fois, leur utilisation n'est pas recommandée pour les opérations qui provoquent des effets de bord (I/O)."]
+          (navigation-block previous next)]
 
     [:h2 "Language not supported."]))
 
