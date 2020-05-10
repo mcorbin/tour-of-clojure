@@ -27,7 +27,7 @@
           [:p [:code "send-off"] " et " [:code "send"] " prennent toutes les deux en paramètre une fonction dont le premier paramètre est son état et dont la dernière expression sera le nouvel état de l'agent."]
           [:p "Un agent effectuant ses opérations de manière asynchrone mais serialisée (les actions sont faites dans l'ordre de leur insertion) est le candidat idéal si l'on souhaite permettre l'accès à une ressource partagée, comme l'écriture dans un fichier par exemple."]
           [:h3 "send-off et send"]
-          [:p "La différence entre " [:code "send-off"] " et " [:code "send"] " est subtile. " [:code "send-off"] " envoie une action sur un pool de threads non borné alors que " [:code "send"] " affectera son opération à un pool de threads borné."]
+          [:p "La différence entre " [:code "send-off"] " et " [:code "send"] " est subtile. " [:code "send-off"] " envoie une action qui sera exécutée sur un thread dédié alors que " [:code "send"] " effectuera son opération sur un pool de thread interne à Clojure."]
           [:p "D'une manière générale: si l'opération effectue des opérations bloquantes, il faut utiliser " [:code "send-off"] " alors que les opérations non bloquantes peuvent être réalisées avec " [:code "send"]"."]
           (navigation-block previous next)]
 

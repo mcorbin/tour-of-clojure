@@ -22,23 +22,23 @@
           [:p "Le moyen de communiquer est le channel pouvant être créé grâce à " [:code "chan"] "."]
           [:pre [:code "(def c (chan)) ; Unbuffered channel === (chan 1)
 (def c (chan 10)) ; Buffered channel"]]
-          [:p "L'écriture dans un channel se fait grâce aux symbols " [:code ">>!"] " (bloquant jusqu'à consommation) et " [:code ">!"] "(non bloquant)"]
+          [:p "L'écriture dans un channel se fait grâce aux symboles " [:code ">>!"] " (bloquant jusqu'à consommation) et " [:code ">!"] "(non bloquant)"]
           [:pre [:code "(>>! c 10) ; In one thread"]]
-          [:p "La valeur peut être lu d'un channel grâce à " [:code "&lt;&lt;!"] " (bloquant) et respectivement" [:code "&lt;!"] "(non bloquant)"]
+          [:p "Les valeurs contenues dans un un channel peuvent être consommées grâce à " [:code "&lt;&lt;!"] " (bloquant) et respectivement" [:code "&lt;!"] "(non bloquant)"]
           [:pre [:code "(println (&lt;&lt;! c)) ; In another thread"]]
           [:h3 "Go blocks"]
-          [:p "Les symbols non bloquants ("[:code "&lt;!"]" et " [:code ">!"] ") ne peuvent être utilisés que dans des go blocks. Un go block est unité de d'éxécution qui va être traitée par un pool de threads.
-          Les symbols non bloquants ne vont pas bloquer le thread mais " [:i "\"parquer\""]" le go block en attente de traitement."]
+          [:p "Les symboles non bloquants ("[:code "&lt;!"]" et " [:code ">!"] ") ne peuvent être utilisés que dans des go blocks. Un go block est une unité d'exécution qui sera traitée par un pool de threads.
+          Les symboles non bloquants ne vont pas bloquer le thread mais " [:i "\"parquer\""]" le go block en attente de traitement."]
           [:pre [:code "; Producer - Writes number 1 to 100 into the channel c each second
 (go
   (doseq [v (range 100)]
-    (Thread/sleep 1000)
+    (&lt;! (timeout 1000))
     (>! c v)))
 
 ; Consumer - Reads number 1 to 100 from the channel c
 (go
   (loop []
-    (println (&lt c)) ; Do not block the thread, the go block is parked
+    (println (&lt;! c)) ; Do not block the thread, the go block is parked
     (recur)))"]]
           [:h3 "Attente d'un channel"]
           [:p "Dans le cas où nous avons plusieurs producteurs, il peut s'avérer utile de consommer une donnée dès que celle-ci est disponible."
@@ -50,14 +50,14 @@
 ; Produces 1 every second
 (go
   (loop []
-    (Thread/sleep 1000)
+    (&lt;! (timeout 1000))
     (>! one-chan 1)
     (recur)))
 
 ; Produces 2 every two seconds
 (go
   (loop []
-    (Thread/sleep 2000)
+    (&lt;! (timeout 2000))
     (>! two-chan 2)
     (recur)))
 
@@ -80,7 +80,8 @@
     [:h3 "Aller plus loin"]
     [:p "Nous avons abordé les principales primitives de " [:b "core-async"] ", les quelques liens suivants vous permettront de creuser le sujet :"]
     [:p [:a {:href "https://clojure.org/news/2013/06/28/clojure-clore-async-channels"} "Clojure core.async Channels"]]
-    [:p [:a {:href "https://github.com/clojure/core.async/blob/master/examples/walkthrough.clj"} "core.async Walkthrough"]]]
+    [:p [:a {:href "https://github.com/clojure/core.async/blob/master/examples/walkthrough.clj"} "core.async Walkthrough"]]
+    (navigation-block previous next)]
     [:h2 "Language not supported."]))
 
 

@@ -3,22 +3,19 @@
 (def two-chan (chan))
 
 ; Produces 1 every second
-(go
-  (loop []
-    (Thread/sleep 1000)
+(go-loop []
+    (<! (timeout 1000))
     (>! one-chan 1)
-    (recur)))
+    (recur))
 
 ; Produces 2 every two seconds
-(go
-  (loop []
-    (Thread/sleep 2000)
+(go-loop []
+    (<! (timeout 2000))
     (>! two-chan 2)
-    (recur)))
+    (recur))
 
 ; Consumes both channels as soon as possible
-(go
-  (loop []
+(go-loop []
     (let [[v c] (alts! [one-chan two-chan])]
       (prn v)
-      (recur))))
+      (recur)))
