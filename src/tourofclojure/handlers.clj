@@ -57,7 +57,7 @@
             [tourofclojure.pages.ide :as page-ide]
             ))
 
-(def non-interactives #{"ref"})
+(def non-interactives #{"ref" "agent" "core-async"})
 
 (defn get-lang
   [cookies]

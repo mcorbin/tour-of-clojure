@@ -48,6 +48,7 @@
           [:p "Ici, la nouvelle valeur de l'atom sera " [:b "100"] "."]
           [:h3 "Concurrence"]
           [:p "TODO"]
+          (navigation-block previous next)
           ]
 
     [:h2 "Language not supported."])
