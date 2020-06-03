@@ -47,7 +47,13 @@
           [:pre [:code "(reset! my-atom [100])"]]
           [:p "Ici, la nouvelle valeur de l'atom sera " [:b "100"] "."]
           [:h3 "Concurrence"]
-          [:p "TODO"]
+          [:p "Comme mentionné précédemment, un atom est thread-safe en implémentant un mécanisme de compare and set, soit:"]
+          [:ol
+            [:li "La valeur de l'atom est lue"]
+            [:li "La fonction soumise via " [:code "swap!"] " ou " [:code "reset!"] " est appliquée"]
+            [:li "La nouvelle valeur est mise dans l'atom si celle-ci n'a pas changée depuis sa lecture (modifiée par un autre thread).
+            Dans le cas contraire, les opérations sont réeffectuées."]
+            ]
           (navigation-block previous next)
           ]
 

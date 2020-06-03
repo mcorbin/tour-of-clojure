@@ -4,18 +4,42 @@
             [tourofclojure.pages.util :refer [navigation-block]]))
 
 (def code
-  (slurp (io/resource "public/pages/code/namespaces.clj")))
+  (slurp (io/resource "public/pages/code/namespaces")))
 
 (defn desc
   [previous next lang]
   (condp = lang
     "fr" [:div
           [:h2 "Namespaces"]
-          [:p "TODO"]
-          ]
+          [:p "Un namespace contient un ensemble de variables ("[:code "def"]") et de fonctions ("[:code "defn"]"). Nommé, il peut être défini avec " [:code "ns"] "."]
+          [:pre [:code "(ns mcorbin.core)
 
-    [:h2 "Language not supported."])
-  )
+(def one 1)
+(defn add-one [x] (inc x))"]]
+          [:p "Un namespace peut référencer un autre namespace et ainsi utiliser les éléments qu'il expose avec " [:code "require"] "."]
+          [:pre [:code "(ns mcorbin.example1)
+(require 'mcorbin.core)
+
+(mcorbin.core/add-one 5)"]]
+          [:p "Il est courant d'intégrer le require dans la form définissant le namespace :"]
+          [:pre [:code "(ns mcorbin.example2)
+  (:require [mcorbin.core])
+
+(mcorbin.core/add-one 5)"]]
+          [:p "Afin de ne pas avoir à utiliser le nom du namespace complet, il est possible de lui affecter un alias grâce à " [:code ":as"] "."]
+          [:pre [:code "(ns mcorbin.example3)
+  (:require [mcorbin.core :as core])
+
+(core/add-one 5)"]]
+          [:p "Ou d'importer uniquement quelques fonctions avec " [:code "refer"] "."]
+          [:pre [:code "(ns mcorbin.example4)
+  (:require [mcorbin.core :refer [add-one]])
+
+(add-one 5)"]]
+    (navigation-block previous next)]
+
+    [:h2 "Language not supported."]))
+
 
 (defn page
   [previous next lang]
