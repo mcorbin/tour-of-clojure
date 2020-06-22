@@ -16,7 +16,7 @@
           [:h2 "Macros"]
           [:p "Clojure dispose d'un système de macro permettant de créer des abstractions complexes pouvant servir notamment à ajouter des fonctionnalités au langage.
            En réalité, beaucoup d'éléments présentés dans ce tutoriel sont en réalité des macros et non pas des fonctions ("[:code "cond"] ", "[:code "condp"]", "[:code "for"]", "[:code "when"]"...) et certaines librairies comme core.async est majoritement écrite avec des macros."]
-          [:p "Une macro se définit avec " [:code "defmacro"] ". La différence entre une fonction et une macro est que dans cette dernière les arguments ne sont pas évalués.
+          [:p "Une macro se définit avec " [:code "defmacro"] ". La différence entre une fonction et une macro est que dans cette dernière les arguments ne sont pas évalués avant d'être transformés par la macro.
           La macro traite les données reçues en argument afin de produire des nouvelles forms."]
           [:p "Imaginons que nous souhaitions réaliser une notation infix sous forme de fonction : " [:code "(infix (2 + 3))"] ". Ce ne serait pas possible car Clojure va d'abord évaluer " [:code "(2 + 3)"] " qui retournera une exception."]
           [:p "Maintenant, sous forme de macro :"]
@@ -30,7 +30,6 @@
           [:p "Grâce à " [:code "macroexpand"] " on comprend aisément comment une macro est évaluée."]
           [:pre [:code "(macroexpand '(infix (2 + 3)))
 (+ 2 3)"]]
-          [:p "La majorité des éléments que nous avons traité jusqu'ici sont en réalité des macros et non pas des fonctions."]
           [:p "La philosophie des Lisp \"data as code\" prend avec les macros tout son sens. On prend une structure de données, on la transforme en une autre structure de données qui correspond maintenant à du code à exécuter."]
 
 
