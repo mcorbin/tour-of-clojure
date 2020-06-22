@@ -14,8 +14,8 @@
   (condp = lang
     "fr" [:div
           [:h2 "Macros"]
-          [:p "Clojure dispose d'un système de macros qui permet au développeur d'étendre les fonctionnalités du langage.
-           Les macros permettent d'introduire des nouveaux éléments sans dépendre d'un changement dans le coeur."]
+          [:p "Clojure dispose d'un système de macro permettant de créer des abstractions complexes pouvant servir notamment à ajouter des fonctionnalités au langage.
+           En réalité, beaucoup d'éléments présentés dans ce tutoriel sont en réalité des macros et non pas des fonctions ("[:code "cond"] ", "[:code "condp"]", "[:code "for"]", "[:code "when"]"...) et certaines librairies comme core.async est majoritement écrite avec des macros."]
           [:p "Une macro se définit avec " [:code "defmacro"] ". La différence entre une fonction et une macro est que dans cette dernière les arguments ne sont pas évalués.
           La macro traite les données reçues en argument afin de produire des nouvelles forms."]
           [:p "Imaginons que nous souhaitions réaliser une notation infix sous forme de fonction : " [:code "(infix (2 + 3))"] ". Ce ne serait pas possible car Clojure va d'abord évaluer " [:code "(2 + 3)"] " qui retournera une exception."]

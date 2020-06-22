@@ -11,7 +11,7 @@
   (condp = lang
     "fr" [:div
           [:h2 "Namespaces"]
-          [:p "Un namespace contient un ensemble de variables ("[:code "def"]") et de fonctions ("[:code "defn"]"). Nommé, il peut être défini avec " [:code "ns"] "."]
+          [:p "Un namespace est une unité d'organisation pouvant contenir des déclarations de variables ("[:code "def"]"), de fonctions ("[:code "defn"]") et des ensembles d'expressions arbitraires. Nommé, il peut être défini avec " [:code "ns"] "."]
           [:pre [:code "(ns mcorbin.core)
 
 (def one 1)

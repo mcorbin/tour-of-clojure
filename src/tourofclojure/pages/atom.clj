@@ -52,7 +52,7 @@
             [:li "La valeur de l'atom est lue"]
             [:li "La fonction soumise via " [:code "swap!"] " ou " [:code "reset!"] " est appliquée"]
             [:li "La nouvelle valeur est mise dans l'atom si celle-ci n'a pas changée depuis sa lecture (modifiée par un autre thread).
-            Dans le cas contraire, les opérations sont réeffectuées."]
+            Dans le cas contraire, les opérations sont réeffectuées. C'est pourquoi il est important d'éviter les side-effects dans une fonction appliquée à un atom, car cette fonction pourrait être éventuellement rejouée."]
             ]
           (navigation-block previous next)
           ]
