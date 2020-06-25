@@ -1,0 +1,13 @@
+(ns mcorbin.core)
+
+(defn add-1 [x] (inc x))
+
+(ns mcorbin.example1
+  (:require [mcorbin.core :as core]))
+
+(println (core/add-1 4))
+
+(ns mcorbin.example2
+  (:require [mcorbin.core :refer [add-1]]))
+
+(println (add-1 5))

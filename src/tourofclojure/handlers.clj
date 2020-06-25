@@ -54,10 +54,10 @@
             [tourofclojure.pages.namespaces :as page-namespaces]
             [tourofclojure.pages.macros :as page-macros]
             [tourofclojure.pages.repl-driven :as page-repl]
-            [tourofclojure.pages.ide :as page-ide]
-            ))
+            [tourofclojure.pages.ide :as page-ide]))
 
-(def non-interactives #{"ref" "agent" "core-async"})
+
+(def non-interactives #{"ref" "agent" "core-async" "macros" "more-thread"})
 
 (defn get-lang
   [cookies]
