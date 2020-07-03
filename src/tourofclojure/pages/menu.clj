@@ -66,9 +66,9 @@
             [:ul
              [:li (link-to {} "/pages/namespaces" "Namespaces")]
              [:li (link-to {} "/pages/macros" "Macros")]]
-            [:h3 "Développer en Clojure"]
-            [:ul
-             [:li (link-to {} "/pages/repl" "Repl Driven Development")]
-             [:li (link-to {} "/pages/ide" "IDE")]]
+            ;[:h3 "Développer en Clojure"]
+            ;[:ul
+             ;[:li (link-to {} "/pages/repl" "Repl Driven Development")]
+             ;[:li (link-to {} "/pages/ide" "IDE")]]
             ]]]
     [:h2 "Language not supported"]))
