@@ -1,4 +1,4 @@
-# A tour of Clojure
+# A Tour of Clojure
 
 Interactive Clojure tutorial.
 
