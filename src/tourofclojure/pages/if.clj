@@ -29,7 +29,7 @@
            " condition est fausse est optionnelle. En cas de condition fausse et"
            " sans de branches associée, " [:b "if"] " retournera " [:b "nil"] "."]
           [:h3 "or et and"]
-          [:p [:b "or"] " sert à vérifier si au moins un de ses paramètre est "
+          [:p [:b "or"] " sert à vérifier si au moins un de ses paramètres est "
            " évalué comme vrai. Si oui, ce paramètre sera retourné. Si non, " [:b "or"]
            " retournera son dernier paramètre. La valeur retournée peut ensuite"
            " être utilisée dans la condition d'un if par exemple."]

@@ -112,7 +112,7 @@
              "core-async" (page-core-async/page "agent" "more-thread" lang)
              "more-thread" (page-more-thread/page "agent" "namespaces" lang)
              "namespaces" (page-namespaces/page "more-thread" "macros" lang)
-             "macros" (page-macros/page "namespaces" "repl" lang)
+             "macros" (page-macros/page "namespaces" nil lang)
              "repl" (page-repl/page "macros" "ide" lang)
              "ide" (page-ide/page "repl" nil lang)
              )

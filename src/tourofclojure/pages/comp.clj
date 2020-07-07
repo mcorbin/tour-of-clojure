@@ -12,8 +12,8 @@
   (condp = lang
     "fr" [:div
           [:h2 "comp"]
-          [:p "Comme son nom l'indique, " [:b "comp"] " est utilisé pour fair de"
-           " la composition de fonction. " [:b "comp"] " prend en paramètre une"
+          [:p "Comme son nom l'indique, " [:b "comp"] " est utilisé pour faire de"
+           " la composition de fonctions. " [:b "comp"] " prend en paramètre une"
            " série de fonctions, et retourne la composition de ces fonctions."
            " Prenons l'exemple suivant:"
            [:pre [:code "(def get-bar-foo (comp :foo :bar))

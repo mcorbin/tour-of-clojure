@@ -20,7 +20,7 @@
           [:p "Comme nous l'avons vu précédemment, la librairie standard de"
            " Clojure fournit un grand nombre de fonctions pour réaliser cela. Une"
            " autre technique est le destructuring, qui est présenté ici sur des"
-           " Vector."]
+           " vectors."]
           [:p "Le destructuring permet de facilement assigner à des variables des"
            " valeurs présentes dans une structure de données."]
           [:p "Prenons par exemple le code suivant:"]
@@ -36,16 +36,16 @@
           [:p "On remarque qu'en wrappant s1 et s2 dans un vector, et en lui"
            " assignant comme valeur le vector contenant les deux string, Clojure"
            " assignera automatiquement à s1 et s2 les deux premiers éléments du"
-           " Vector."]
+           " vectors."]
           [:p "De la même façon, il est possible d'assigner une partie des éléments"
-           " d'un Vector à des variables, et tout le reste du Vector dans un autre"
+           " d'un vector à des variables, et tout le reste du vector dans une autre"
            " variable. Par exemple, la syntaxe " [:b "[n1 n2 & nrest]"] " assignera"
-           " à n1 et n2 les deux premiers éléments du Vector, et nrest sera un"
+           " à n1 et n2 les deux premiers éléments du vector, et nrest sera un"
            " vector contenant le reste des éléments."]
           [:p "Il est également possible d'assigner dans des variables des valeurs"
            " présentes dans des structures de données imbriquées. C'est ce qui est"
            " réalisé dans l'exemple numéro 3."]
-          [:p "Le destructuring marche sur des Vector, mais plus généralement sur"
+          [:p "Le destructuring marche sur des vectors, mais plus généralement sur"
            " tout ce qui est indexé (list, set, string)."]
           [:p "Enfin, le mot clé " [:b ":as"] " permet d'assigner à une variable"
            " la valeur complète étant déstructurée. Par exemple, dans"]
@@ -53,7 +53,7 @@
           [:p "c1 vaudra " [:b "H"] ", c2 " [:b "e"] ", c3 " [:b "l"] ", et "
            "full string la chaîne complète " [:b "Hello world!"] "."]
           [:p "Dans la suite de ce tutoriel, je présenterais le destructuring sur"
-           " les map. Vous pouvez également consulter le "
+           " les maps. Vous pouvez également consulter le "
            (link-to {} "https://clojure.org/guides/destructuring" "guide de Clojure")
            " pour un tutoriel plus complet sur le destructuring."]
           (navigation-block previous next)
@@ -64,4 +64,3 @@
   [previous next lang]
   [(desc previous next lang)
    code])
-

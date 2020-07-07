@@ -15,8 +15,8 @@
     "fr" [:div
           [:h2 "Ref"]
           [:p "Une " [:b "ref"] " est une identité englobant une valeur. Au même titre qu'un atom, il s'agit d'une référence sur cette dernière.
-          Les ref peuvent être modifiées mais uniquement au travers d'une transaction dans la Sofware Transactional Memory (STM)."]
-          [:p "Elles remplacent les atom lorsquent des modifications " [:b "coordonnées"] " sur plusieurs éléments sont requises."]
+          Les refs peuvent être modifiées mais uniquement au travers d'une transaction dans la Sofware Transactional Memory (STM)."]
+          [:p "Elles remplacent les atoms lorsquent des modifications " [:b "coordonnées"] " sur plusieurs éléments sont requises."]
           [:h3 "Opérations de base"]
           [:p "Une ref se définit via le symbole " [:b "ref"] ", qui prend en paramètre l'état de la ref."]
           [:pre [:code "(def account (ref 1000))"]]

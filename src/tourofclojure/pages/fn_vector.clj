@@ -10,8 +10,8 @@
   [previous next lang]
   (condp = lang
     "fr" [:div
-          [:h2 "Opérations sur les Vector"]
-          [:p "Je présente ici quelques opérations sur les Vector, qui est"
+          [:h2 "Opérations sur les Vectors"]
+          [:p "Je présente ici quelques opérations sur les Vectors, qui est"
            " une structure de donnée énormément utilisée en Clojure."]
           [:p "Par exemple, la fonction " [:b "conj"] " permet d'ajouter "
            " un élément à la fin d'un vector:"]
@@ -20,7 +20,7 @@
           [:p "Comme vous pouvez le constater, de nombreuses fonctions manipulant"
            " des structures de données en Clojure peuvent prendre un nombre"
            " variable d'arguments. C'est par exemple le cas de " [:b "conj"]
-           " pour les vector."]
+           " pour les vectors."]
           [:p "N'hésitez pas à consulter la documentation des fonctions pour voir"
            " lesquelles peuvent prendre un nombre variable de paramètres."]
           (navigation-block previous next)]

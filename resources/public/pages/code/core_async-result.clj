@@ -1,4 +1,4 @@
-; Order can change
+;; order can vary
 1
 1
 2

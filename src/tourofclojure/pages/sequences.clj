@@ -13,13 +13,13 @@
           [:h2 "L'abstraction séquence"]
           [:p]
           [:p "Un grand nombre de fonctions peuvent prendre en paramètre"
-           " tout type de collections (vector, des list, map, set)."
+           " tout type de collections (vectors, lists, maps, sets)."
            " Cela fonctionne grâce"
            " à une abstraction nommée séquence."]
           [:p "Toutes les séquences sont des collections."]
           [:p "Cette abstraction définit une façon d'accéder et d'itérer"
-           " de façon ordonnée et optimisée sur une structure de donnée."]
-          [:p "les collections Clojure peuvent être converties en séquence via la fonction " [:b "seq"] "."]
+           " de façon ordonnée et optimisée sur une structure de données."]
+          [:p "Les collections Clojure peuvent être converties en séquence via la fonction " [:b "seq"] "."]
           [:p "D'ailleurs, si on regarde la description de la fonction " [:b "first"]
            " dans la documentation, on remarque que la fonction utilise " [:b "seq"] ":"]
           [:pre

@@ -14,7 +14,7 @@
            " en Clojure se base sur des exceptions."]
           [:p "Une exception peut être capturée via un block " [:b "try-catch"]
            " terminé eventuellement d'un block " [:b "finally"] "."
-           "Une opération illégale où le mot clé " [:b "throw"] " lèvera"
+           " Une opération illégale où le mot clé " [:b "throw"] " lèvera"
           " une exception."]
           [:p "En Clojure sur la JVM, les exceptions sont des exceptions Java:"
            [:pre [:code {:class "clojure"}
@@ -43,4 +43,3 @@
   [previous next lang]
   [(desc previous next lang)
    code])
-

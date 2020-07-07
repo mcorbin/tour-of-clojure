@@ -15,7 +15,7 @@
           [:p "Une variable globale se définit avec le mot clé " [:b "def"] "."]
           [:pre [:code "(def foo 1)"]]
           [:p "Le code précédent assigne à " [:b "foo"] " la valeur " [:b "1"]
-           ". Cette variable peut ensuit être utilisée."]
+           ". Cette variable peut ensuite être utilisée."]
           [:p "Toutes les variables Clojure (list, set, vector, map...) sont "
            [:b "immuables"] ". Cela est une des grande force de Clojure."]
           [:p "Lorsque vous modifiez une variable (par exemple un vector avec"
@@ -44,4 +44,3 @@
   [previous next lang]
   [(desc previous next lang)
    code])
-

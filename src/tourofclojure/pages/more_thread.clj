@@ -20,16 +20,16 @@
           [:p "Une future permet l'exécution d'un traitement dans un nouveau thread. Une fois résolue, la valeur est mise en cache."]
           [:pre [:code "(def my-future
   (future
-    (Thread/sleep 10000) ; Doing some work
-    4))                  ; Returns and cache the result"]]
-          [:p "Elle peut être déréférencée de manière bloquante grâce à " [:code "deref"] " ou " [:code "@"] "."]
-          [:pre [:code "(deref my-future) ; Dereferences the future - blocking"]]
+    (Thread/sleep 10000) ;; doing some work
+    4))                  ;; returns and cache the result"]]
+          [:p "Elle peut être déréférencée de manière bloquante grâce à " [:b "deref"] " ou " [:b "@"] "."]
+          [:pre [:code "(deref my-future) ;; dereferences the future - blocking"]]
           [:h3 "Promise"]
-          [:p "Une promise est une primitive qui peut être lu que lorsque sa valeur lui a été fourni (généralement par un autre thread)."]
+          [:p "Une promise est une primitive qui peut être lue que lorsque sa valeur lui a été fournie grâce à "[:b "deliver"]" (par un autre thread)."]
           [:pre [:code "(def my-promise (promise))
 (deliver my-promise 12)"]]
-          [:p "Elle peut être déréférencée de manière bloquante grâce à " [:code "deref"] " ou " [:code "@"] "."]
-          [:pre [:code "(deref my-promise) ; Deferences the promise - blocking until a value has been delivered"]]
+          [:p "Elle peut être déréférencée de manière bloquante grâce à " [:b "deref"] " ou " [:b "@"] "."]
+          [:pre [:code "(deref my-promise) ;; deferences the promise - blocking until a value has been delivered"]]
           [:h3 "Java Interop"]
           [:p "La langage Java continue de fournir des éléments intéressants dans son package " [:b "java.util.concurrent"] ". On retrouve par exemple les Executors et le ForkJoin framework."]
           [:p "L'intéropérabilité avec le langage Java est très simple : "]

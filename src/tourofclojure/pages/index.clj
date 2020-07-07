@@ -11,15 +11,12 @@
     "fr" [:div
           [:h2 "Bonjour !"]
           [:p]
-          [:p [:b "Ce tutoriel est encore en construction !"
-               " Le contenu de certaines sections est manquant."
-               ]]
           [:p "Bienvenue pour une introduction sur le langage "
            (link-to {} "http://clojure.org" "Clojure") "."]
 
           [:p "Clojure est un langage fonctionnel de la famille des LISP"
-           ", dynamiquement typé, fonctionnant dans la machine virtuelle Java, le "
-           "Common Language Runtime de Microsoft et compilant en Javascript via "
+           ", dynamiquement typé, fonctionnant dans la Java Virtual Machine (JVM), le "
+           "Common Language Runtime (CLR) de Microsoft et compilant en Javascript via "
            (link-to {} "https://clojurescript.org/" "ClojureScript") "."]
 
           [:p "Ce tutoriel est interactif (via "
@@ -30,7 +27,7 @@
            (link-to {} "/menu" "menu") "."]
 
           [:p "Ce tutoriel présente les éléments essentiels de Clojure, mais"
-           " passe volontairement sous silence un certain nombre de choses."]
+           " passe volontairement sous silence un certain nombre de notions avancées."]
 
           [:p "Voici d'autres tutoriels intéressants amenant un complément "
            " d'informations et permettant d'aller plus loin avec le langage: "]

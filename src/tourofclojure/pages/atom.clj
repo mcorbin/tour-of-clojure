@@ -12,13 +12,13 @@
     "fr" [:div
           [:h2 "Atom"]
           [:p "Un atom est un type englobant une valeur, c'est à dire qu'il"
-           " est une référence vers cette dernière. Les atom permettent de "
+           " est une référence vers cette dernière. Les atoms permettent de "
            " modifier cette valeur, ce qui est donc utile pour avoir une variable "
            " que l'on peut modifier."]
-          [:p "De plus, les atom sont thread-safe, via un mecanisme de compare and"
-           " set. J'expliquerais plus loin ce que cela signifie"]
+          [:p "De plus, les atoms sont thread-safe, via un mecanisme de compare and"
+           " set. J'expliquerai plus loin ce que cela signifie"]
           [:h3 "Opérations de base"]
-          [:p "Un atom se définie via le symbole " [:b "atom"] ", qui prend en"
+          [:p "Un atom se définit via le symbole " [:b "atom"] ", qui prend en"
            " paramètre l'état initial de l'atom. Il est ensuite possible d'intéragir"
            " avec l'atom via la fonction " [:b "swap!"] "."
            ]
@@ -50,7 +50,7 @@
           [:p "Comme mentionné précédemment, un atom est thread-safe en implémentant un mécanisme de compare and set, soit:"]
           [:ol
             [:li "La valeur de l'atom est lue"]
-            [:li "La fonction soumise via " [:code "swap!"] " ou " [:code "reset!"] " est appliquée"]
+            [:li "La fonction soumise via " [:b "swap!"] " ou " [:b "reset!"] " est appliquée"]
             [:li "La nouvelle valeur est mise dans l'atom si celle-ci n'a pas changée depuis sa lecture (modifiée par un autre thread).
             Dans le cas contraire, les opérations sont réeffectuées. C'est pourquoi il est important d'éviter les side-effects dans une fonction appliquée à un atom, car cette fonction pourrait être éventuellement rejouée."]
             ]
