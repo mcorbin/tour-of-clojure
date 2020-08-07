@@ -15,11 +15,11 @@
              [:li (link-to {} "/pages/forms" "Forms et l'appel de fonctions")]
              [:li (link-to {} "/pages/fn-nb" "Opérations sur les nombres")]
              [:li (link-to {} "/pages/datastructures" "Structures de données")]
-             [:li (link-to {} "/pages/vector" "Opérations sur les Vector")]
-             [:li (link-to {} "/pages/map1" "Opérations sur les Map: partie 1")]
-             [:li (link-to {} "/pages/map2" "Opérations sur les Map: partie 2")]
-             [:li (link-to {} "/pages/set" "Opérations sur les Set")]
-             [:li (link-to {} "/pages/list" "Opérations sur les List")]
+             [:li (link-to {} "/pages/vector" "Opérations sur les Vectors")]
+             [:li (link-to {} "/pages/map1" "Opérations sur les Maps: partie 1")]
+             [:li (link-to {} "/pages/map2" "Opérations sur les Maps: partie 2")]
+             [:li (link-to {} "/pages/set" "Opérations sur les Sets")]
+             [:li (link-to {} "/pages/list" "Opérations sur les Lists")]
              [:li (link-to {} "/pages/sequences" "L'abstraction séquence")]
              [:li (link-to {} "/pages/lazy" "Evaluation lazy")]]
             [:h3 "Définir des fonctions et variables"]
@@ -66,9 +66,9 @@
             [:ul
              [:li (link-to {} "/pages/namespaces" "Namespaces")]
              [:li (link-to {} "/pages/macros" "Macros")]]
-            [:h3 "Développer en Clojure"]
-            [:ul
-             [:li (link-to {} "/pages/repl" "Repl Driven Development")]
-             [:li (link-to {} "/pages/ide" "IDE")]]
+            ;[:h3 "Développer en Clojure"]
+            ;[:ul
+             ;[:li (link-to {} "/pages/repl" "Repl Driven Development")]
+             ;[:li (link-to {} "/pages/ide" "IDE")]]
             ]]]
     [:h2 "Language not supported"]))

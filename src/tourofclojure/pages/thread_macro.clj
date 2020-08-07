@@ -11,7 +11,7 @@
   (condp = lang
     "fr" [:div
           [:h2 "Threading macros"]
-          [:p "En Clojure, on se retrouve facilement à imbriquer les expresions."
+          [:p "En Clojure, on se retrouve facilement à imbriquer les expressions."
            " A force, Cela peut nuire à la lisibilité. Prenons l'exemple suivant:"]
           [:pre [:code "(reduce + (map inc (filter even? (range 10))))"]]
           [:p "On voit 4 expressions imbriquées dans ce code. Voyons comment"
@@ -74,7 +74,3 @@
   [previous next lang]
   [(desc previous next lang)
    code])
-
-
-
-

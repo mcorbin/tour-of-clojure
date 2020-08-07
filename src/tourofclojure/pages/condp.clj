@@ -13,7 +13,7 @@
           [:h2 "condp"]
           [:p "Une autre construction intéressante est " [:b "condp"] "."]
           [:p "Le premier paramètre de " [:b "condp"] " est une fonction que l'on appellera " [:b "f"] "."
-           " Le second paramètre un valeur que l'on appellera " [:b "v"] ". "
+           " Le second paramètre une valeur que l'on appellera " [:b "v"] ". "
            [:b "condp"] " prend ensuite une série de clauses où une valeur "
            [:b "c"] " est associée à un résultat " [:b "r"] "."
            ]
@@ -30,8 +30,8 @@
   2 \"1 == 2 ?!\"
   3 \"3 == 1 !\"
   \"default value\")"]]
-          [:p "Ici, on va tout d'abord tester " [:b "(= 1 2)"] ", puis"
-           [:b "(= 1 3)"] "." "Vu qu'aucune de ces conditions est vraie, "
+          [:p "Ici, on va tout d'abord tester " [:b "(= 1 2)"] ", puis "
+           [:b "(= 1 3)"] "." " Vu qu'aucune de ces conditions est vraie, "
            " la valeur par défaut " [:b "default value"] " sera retournée."
            ]
           (navigation-block previous next)]
@@ -42,4 +42,3 @@
   [previous next lang]
   [(desc previous next lang)
    code])
-

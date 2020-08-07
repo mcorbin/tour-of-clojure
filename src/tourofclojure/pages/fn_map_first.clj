@@ -10,10 +10,10 @@
   [previous next lang]
   (condp = lang
     "fr" [:div
-          [:h2 "Opérations sur les Map: partie 1"]
-          [:p "Voici quelques opérations sur les Map."]
+          [:h2 "Opérations sur les Maps: partie 1"]
+          [:p "Voici quelques opérations sur les Maps."]
           [:p "On voit ici tout l'intérêt des " [:b "keywords"] " présentés"
-           " précédemment. En effet, les clés des Map sont généralement des"
+           " précédemment. En effet, les clés des Maps sont généralement des"
            " keywords."]
           [:h3 "get"]
           [:p "Une Map peut avoir des clés de tout type, et il est possible"
@@ -21,15 +21,15 @@
           [:p "Si la clé est un keyword, il n'est pas nécessaire d'appeler "
            [:b "get"] ", on peut directement utiliser le keyword pour récupérer"
            " la valeur associée."]
-          [:p "Par exemple, les codes suivant sont équivalents (et retourneront"
-           " comme résultat " [:b "1"] ":"]
-          [:pre [:code "(get {:foo 1} :foo)
-(:foo {:foo 1})"]]
+          [:p "Par exemple, les codes suivants sont équivalents (et retourneront"
+           " comme résultat " [:b "1"] ")"]
+          [:pre [:code "(get {:foo 1} :foo) ;; with the get function
+(:foo {:foo 1})     ;; with the keyword"]]
           [:p "Vu que la clé " [:b "foo"] " est un keyword, il est possible"
            " d'utiliser cette clé comme une fonction et de se passer de " [:b "get"]
            "."]
           [:p "Il est possible de spécifier une valeur par défaut à retourner"
-           " si la clé n'existe pas. Sinon, " [:b "nil"] "sera retourné."]
+           " si la clé n'existe pas. Sinon, " [:b "nil"] " sera retourné."]
           [:pre [:code "(get {:foo 1} :bar 2)
 (:bar {:foo 1} 2)"]]
           [:p "Les deux expressions précédentes retourneront " [:b "2"] " car la"

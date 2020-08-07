@@ -29,16 +29,16 @@
            "Par exemple, " [:b "(add-five 5) " ] "donnera " [:b "10"] "."]
           [:p "Il n'y a pas de mot clé " [:b "return"] " en Clojure. La valeur"
            "  retournée sera la dernière "
-           (link-to {} "/pages/2" "form")
+           (link-to {} "/pages/forms" "form")
            " de la fonction."]
           [:h3 "def et fn"]
-          [:pre [:code "(def multiply
+          [:pre [:code "(def multiply)
   \"multiply the 2 parameters\"
   (fn [n m]
     (+ n m)                                 ;; do nothing
     (str \"Hello \" \"world\" \"!\")              ;; do nothing
     (println \"Side effects\")                ;; i/o
-    (* m n)))                               ;;returned value
+    (* m n))                               ;;returned value
 "]]
           [:p "La fonction " [:b "multiply"] " est elle définie en utilisant les"
            " mots clés " [:b "def"] " (que nous avons vu précédemment) et "
@@ -64,4 +64,3 @@
   [previous next lang]
   [(desc previous next lang)
    code])
-

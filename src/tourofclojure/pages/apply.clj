@@ -21,7 +21,7 @@
           [:p "Là aussi, l'utilisation de " [:b "partial"] " peut avoir son utilité:"]
           [:pre [:code "(apply (partial conj [1 2 3]) [4 5 6 7])"]]
           [:p "Ce code utilise " [:b "partial"] " pour créer une fonction"
-           " qui ajoutera au vector " [:b "[1 2 3]"] " les paramètres passées."
+           " qui ajoutera au vector " [:b "[1 2 3]"] " les paramètres passées. "
            "On peut ensuite appeler cette fonction avec " [:b "apply"] "."]
           (navigation-block previous next)]
     [:h2 "Language not supported."]))
@@ -30,5 +30,3 @@
   [previous next lang]
   [(desc previous next lang)
    code])
-
-

@@ -13,7 +13,7 @@
           [:h2 "while"]
           [:p [:b "while"] " permet de répéter une action (généralement un effet de "
            " bord) tant qu'une condition est vraie. Avant de lire cette page,"
-           " prenez un peu d'avance et regardez comment les " (link-to {} "/pages/types" "Atom") " fonctionnent"]
+           " prenez un peu d'avance et regardez comment les " (link-to {} "/pages/atom" "atoms") " fonctionnent"]
           [:pre [:code "(def state (atom [1 2 3 4 5]))
 
 (while (not-empty @state)
@@ -36,4 +36,3 @@
   [previous next lang]
   [(desc previous next lang)
    code])
-

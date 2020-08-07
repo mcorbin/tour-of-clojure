@@ -20,18 +20,18 @@
           [:p "Prenons le code suivant:"]
           [:pre [:code "(reduce + [1 2 3 4 5])"]]
           [:p "On voit ici que " [:b "reduce"] " prend 2 paramètres: une fonction"
-           "(" [:b "+"] " dans ce cas), ainsi qu'un vector. Ici, reduce retournera"
+           " (" [:b "+"] " dans ce cas), ainsi qu'un vector. Ici, reduce retournera"
            " la somme de tous les éléments dans le vector, c'est à dire " [:b "15"]
            "."]
           [:p "Le traitement réalisé par " [:b "reduce"] " peut être décrit de"
            " la manière suivante:"]
           [:ul
            [:li [:b "reduce"] " va tout d'abord appeler la fonction " [:b "+"]
-            " avec les deux premiers éléments du vector. Cela va donner donner"
+            " avec les deux premiers éléments du vector. Cela va donner"
             [:pre [:code "(+ 1 2)"]] "Le résultat est donc " [:b "3"] "."]
            [:li "Ensuite, " [:b "reduce"] " appellera la fonction avec comme"
             " premier paramètre le résultat précédent (3) suivi de l'élément suivant"
-            " non traité du vectur, c'est à dire le troisième élément (donc de"
+            " non traité du vector, c'est à dire le troisième élément (donc de"
             " valeur 3 également). Cela donnera"
             [:pre [:code "(+ 3 3)"]]
             "Le résultat intermédiaire est donc maintenant " [:b "6"] "."]
@@ -81,5 +81,3 @@
   [previous next lang]
   [(desc previous next lang)
    code])
-
-

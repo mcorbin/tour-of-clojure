@@ -19,7 +19,7 @@
            " pour manipuler des structures de données. Mais il en existe de"
            " nombreuses autres, la librairie standard de Clojure étant très riche."]
           [:h4 "Vector"]
-          [:p "Les vector sont définis entre " [:b "[]"] " ou via la fonction " [:b "vector"]"."
+          [:p "Les vectors sont définis entre " [:b "[]"] " ou via la fonction " [:b "vector"]"."
            " Un vector peut être vu comme un array grandissant sur la droite"
            " (ce qu'on appelle communément une liste dans d'autres langages)."]
           [:p "Clojure étant dynamiquement typé, vous pouvez mixer les types"
@@ -27,23 +27,23 @@
            " données)."]
 
           [:h4 "Map"]
-          [:p "Les map, définies entre " [:b "{}"] " ou via la fonction "
+          [:p "Les maps, définies entre " [:b "{}"] " ou via la fonction "
            [:b "hash-map"]
            ", sont des dictionnaires associant une clé à une valeur."]
           [:p "Les clés et valeurs peuvent être de tout type, mais par convention"
-           " on utilise les " [:b "keywords"] " comme clé dans les map."]
+           " on utilise les " [:b "keywords"] " comme clé dans les maps."]
 
           [:h4 "Set"]
-          [:p "Les set se définissent entre " [:b "#{}"] " ou via la fonction "
+          [:p "Les sets se définissent entre " [:b "#{}"] " ou via la fonction "
            [:b "hash-set"]
            ", et sont des collections de valeurs uniques."]
-          [:p "Il existe aussi des " [:b "des set triés"] ", pouvant être créé"
+          [:p "Il existe aussi des " [:b "des sets triés"] ", pouvant être créés"
            " via la la fonction " [:b "sorted-set"] "."]
 
           [:h4 "List"]
           [:p "Les listes se définissent entre " [:b "'()"] " ou via la fonction "
-           [:b "list"] "."
-           "Les listes ont des caractéristiques différentes des Vector que nous"
+           [:b "list"]"."
+           " Les listes ont des caractéristiques différentes des vectors que nous"
            " découvrirons plus loin."]
           (navigation-block previous next)]
     [:h2 "Language not supported."]))

@@ -10,7 +10,8 @@
     [:meta {:content "text/html;charset=utf-8"}]
     [:meta {:name "viewport"
             :content "width=device-width, initial-scale=1, shrink-to-fit=no"}]
-    [:title "A tour of Clojure"]
+    [:title "A Tour of Clojure"]
+    [:link {:rel "icon" :href "images/clojure-logo.png"}]
     (include-css "/css/bootstrap.min.css")
     (include-js "/js/jquery-3.2.1.slim.min.js")
     (include-js "/js/popper.min.js")

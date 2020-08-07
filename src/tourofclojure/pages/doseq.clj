@@ -29,9 +29,9 @@
         v2 [10 9 8 7 6]]
   (println v1 \":\" v2))"]]
           [:p "Ici, on affichera toutes les combinaisons de v1 et v2 possibles."]
-          [:p "Il est possible d'utiliser de faire un peu de magie avec "
+          [:p "Il est possible de faire un peu de magie avec "
            [:b "doseq"] ", via les keywords " [:b ":let"] ", " [:b ":when"] " et "
-           [:b ":while"] ". Je ne présenterais ici que les deux premiers, "
+           [:b ":while"] ". Je ne présenterai ici que les deux premiers, "
            [:b ":while"] " étant assez complexe. Personnellement, je pense qu'il"
            " faut faire attention avec ces keywords qui peuvent parfois nuire"
            " à la lisibilité du code."]

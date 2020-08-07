@@ -12,12 +12,12 @@
     "fr" [:div
           [:h2 "Opérations sur les nombres"]
           [:p "Voici quelques opérations sur des nombres."]
-          [:p "Un certains nombre de ces fonctions acceptent un nombre indéfini de"
+          [:p "Un certain nombre de ces fonctions acceptent un nombre indéfini de"
            " paramètres. C'est le cas par exemple de la fonction " [:b "+"] "."]
           [:pre [:code "(+ 1 2 3 4 5)"]]
           [:p "Des spécificités peuvent exister selon la plateforme sur lequel"
            " vous faites"
-           " tourner Clojure (JVM, ClojureScript), car Clojure s'appuie sur les"
+           " tourner Clojure (JVM, CLR, ClojureScript), car Clojure s'appuie sur les"
            " types de la plateforme hôte."]
           (navigation-block previous next)]
 
