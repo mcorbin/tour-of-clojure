@@ -26,7 +26,7 @@
            [:b "numbers"] ". A ce moment, on voit que " [:b "println"] " n'a"
            " jamais été appelé. La séquence est créée, mais aucun calcul"
            " n'a été exécuté."]
-          [:p "Rajoutez dans l'interpréteur " [:b "(take s 4)"] " pour "
+          [:p "Rajoutez dans l'interpréteur " [:b "(take 4 s)"] " pour "
            "obtenir les 4 premières valeurs de la séquence. Vous pouvez voir que "
            [:b "println"] " est appelé pour ces valeurs, la séquence s'est"
            " donc réalisée pour ces 4 valeurs."]
