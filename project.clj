@@ -17,6 +17,7 @@
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
   :main tourofclojure.core
+  :target-path "target/%s"
   :source-paths ["src"]
   :profiles {:dev {:dependencies [[javax.servlet/servlet-api "2.5"]
                                   [pjstadig/humane-test-output "0.10.0"]
@@ -28,4 +29,5 @@
                    :injections [(require 'pjstadig.humane-test-output)
                                 (pjstadig.humane-test-output/activate!)]
                    :repl-options {:init-ns user}
+                   :uberjar {:aot :all}
                    :source-paths ["dev/src" "test/tourofclojure"]}})
